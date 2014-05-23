@@ -1,0 +1,55 @@
+NET "CLOCK" LOC = "B8" ;
+NET "CLOCK" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "RESET" LOC = "P11" ;
+
+#NET "SWITCHES<0>" LOC  = "P11" ;
+NET "SWITCHES<1>" LOC  = "L3" ;
+NET "SWITCHES<2>" LOC  = "K3" ;
+NET "SWITCHES<3>" LOC  = "B4" ;
+NET "SWITCHES<4>" LOC  = "G3" ;
+NET "SWITCHES<5>" LOC  = "F3" ;
+NET "SWITCHES<6>" LOC  = "E2" ;
+NET "SWITCHES<7>" LOC  = "N3" ;
+
+
+NET "PUSH_BUTTONS<0>" LOC = "A7" ;
+NET "PUSH_BUTTONS<1>" LOC = "M4" ;
+NET "PUSH_BUTTONS<2>" LOC = "C11" ;
+NET "PUSH_BUTTONS<3>" LOC = "G12" ;
+
+// Horizontal and vertical sync
+NET "HS" LOC = "J14"; 
+NET "VS" LOC = "K13"; 
+
+// Debugging outputs
+NET "LEDS<0>" LOC = "M5";
+NET "LEDS<1>" LOC = "M11";
+NET "LEDS<2>" LOC = "P7";
+NET "LEDS<3>" LOC = "P6";
+NET "LEDS<4>" LOC = "N5";
+NET "LEDS<5>" LOC = "N4";
+NET "LEDS<6>" LOC = "P4";
+NET "LEDS<7>" LOC = "G1";
+
+NET "COLOUR_OUT[0]" LOC = C14; 
+NET "COLOUR_OUT[1]" LOC = D13; 
+NET "COLOUR_OUT[2]" LOC = F13; 
+NET "COLOUR_OUT[3]" LOC = F14; 
+NET "COLOUR_OUT[4]" LOC = G13; 
+NET "COLOUR_OUT[5]" LOC = G14; 
+NET "COLOUR_OUT[6]" LOC = H13; 
+NET "COLOUR_OUT[7]" LOC = J13;
+
+Net "HEX_OUT<0>" LOC = "L14" ;
+Net "HEX_OUT<1>" LOC = "H12" ;
+Net "HEX_OUT<2>" LOC = "N14" ;
+Net "HEX_OUT<3>" LOC = "N11" ;
+Net "HEX_OUT<4>" LOC = "P12" ;
+Net "HEX_OUT<5>" LOC = "L13" ;
+Net "HEX_OUT<6>" LOC = "M12" ;
+Net "HEX_OUT<7>" LOC = "N13" ;
+
+NET "SEG_SELECT<0>" LOC = "F12" ;
+NET "SEG_SELECT<1>" LOC = "J12" ;
+NET "SEG_SELECT<2>" LOC = "M13" ;
+NET "SEG_SELECT<3>" LOC = "K14" ;

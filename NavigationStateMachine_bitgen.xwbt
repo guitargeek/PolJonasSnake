@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/jonas/FPGA/Snake/NavigationStateMachine.ncd
+OUTFILE=/home/jonas/FPGA/Snake/NavigationStateMachine.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4cp132
+WORKINGDIR=/home/jonas/FPGA/Snake
+LICENSE=WebPack
+USER_INFO=201065467_209426030_0_551

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAControl.xst" -ofn "/home/jonas/FPGA/Snake/VGAControl.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAControl.xst" -ofn "/home/jonas/FPGA/Snake/VGAControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAControl.ngc VGAControl.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o VGAControl_map.ncd VGAControl.ngd VGAControl.pcf 
+par -w -intstyle ise -ol high -t 1 VGAControl_map.ncd VGAControl.ncd VGAControl.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGAControl.twx VGAControl.ncd -o VGAControl.twr VGAControl.pcf 
+bitgen -intstyle ise -f VGAControl.ut VGAControl.ncd 

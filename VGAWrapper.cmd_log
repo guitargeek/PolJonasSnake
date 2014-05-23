@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAWrapper.ngc VGAWrapper.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAWrapper.ngc VGAWrapper.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAWrapper.ngc VGAWrapper.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAWrapper.ngc VGAWrapper.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o VGAWrapper_map.ncd VGAWrapper.ngd VGAWrapper.pcf 
+par -w -intstyle ise -ol high -t 1 VGAWrapper_map.ncd VGAWrapper.ncd VGAWrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGAWrapper.twx VGAWrapper.ncd -o VGAWrapper.twr VGAWrapper.pcf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/VGAWrapper.xst" -ofn "/home/jonas/FPGA/Snake/VGAWrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 VGAWrapper.ngc VGAWrapper.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o VGAWrapper_map.ncd VGAWrapper.ngd VGAWrapper.pcf 
+par -w -intstyle ise -ol high -t 1 VGAWrapper_map.ncd VGAWrapper.ncd VGAWrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGAWrapper.twx VGAWrapper.ncd -o VGAWrapper.twr VGAWrapper.pcf 

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/MasterStateMachine.xst" -ofn "/home/jonas/FPGA/Snake/MasterStateMachine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 MasterStateMachine.ngc MasterStateMachine.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o MasterStateMachine_map.ncd MasterStateMachine.ngd MasterStateMachine.pcf 
+par -w -intstyle ise -ol high -t 1 MasterStateMachine_map.ncd MasterStateMachine.ncd MasterStateMachine.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MasterStateMachine.twx MasterStateMachine.ncd -o MasterStateMachine.twr MasterStateMachine.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f MasterStateMachine.ut MasterStateMachine.ncd 

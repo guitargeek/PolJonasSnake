@@ -1,0 +1,662 @@
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "/home/jonas/FPGA/Snake/Snake.xst" -ofn "/home/jonas/FPGA/Snake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
