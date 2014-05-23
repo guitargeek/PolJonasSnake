@@ -89,11 +89,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="NavigationStateMachine_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="NavigationStateMachine_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="NavigationStateMachine_xst.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Snake.bgn" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="Snake.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Snake.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Snake.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="Snake.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Snake.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Snake.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Snake.ngc"/>
@@ -205,6 +202,9 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="snake.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="snake.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="snake.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -241,15 +241,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400436085" xil_pn:in_ck="-8328714958852782895" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3460299693113150145" xil_pn:start_ts="1400436070">
+    <transform xil_pn:end_ts="1400848319" xil_pn:in_ck="-8328714958852782895" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3460299693113150145" xil_pn:start_ts="1400848310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="MasterStateMachine.ngr"/>
       <outfile xil_pn:name="NavigationStateMachine.ngr"/>
       <outfile xil_pn:name="Snake.lso"/>
@@ -266,27 +263,23 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1400431567" xil_pn:in_ck="121549525483422" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4066557905355237140" xil_pn:start_ts="1400431567">
+    <transform xil_pn:end_ts="1400847406" xil_pn:in_ck="121549525483422" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4066557905355237140" xil_pn:start_ts="1400847406">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400436092" xil_pn:in_ck="6559093853225705780" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7089721552785732611" xil_pn:start_ts="1400436085">
+    <transform xil_pn:end_ts="1400848324" xil_pn:in_ck="6559093853225705780" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7089721552785732611" xil_pn:start_ts="1400848319">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Snake.bld"/>
       <outfile xil_pn:name="Snake.ngd"/>
       <outfile xil_pn:name="Snake_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1400436100" xil_pn:in_ck="3567477975187220057" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-4426187071945941580" xil_pn:start_ts="1400436092">
+    <transform xil_pn:end_ts="1400848332" xil_pn:in_ck="3567477975187220057" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-4426187071945941580" xil_pn:start_ts="1400848324">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Snake.pcf"/>
       <outfile xil_pn:name="Snake_map.map"/>
       <outfile xil_pn:name="Snake_map.mrp"/>
@@ -297,11 +290,10 @@
       <outfile xil_pn:name="Snake_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1400436122" xil_pn:in_ck="-4718310849546036106" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1400436100">
+    <transform xil_pn:end_ts="1400848351" xil_pn:in_ck="-4718310849546036106" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1400848332">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Snake.ncd"/>
       <outfile xil_pn:name="Snake.pad"/>
       <outfile xil_pn:name="Snake.par"/>
@@ -313,24 +305,22 @@
       <outfile xil_pn:name="Snake_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1400436131" xil_pn:in_ck="1291840419957012295" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1400436122">
+    <transform xil_pn:end_ts="1400848364" xil_pn:in_ck="1291840419957012295" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1400848351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Snake.bgn"/>
-      <outfile xil_pn:name="Snake.bit"/>
-      <outfile xil_pn:name="Snake.drc"/>
       <outfile xil_pn:name="Snake.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="snake.bgn"/>
+      <outfile xil_pn:name="snake.bit"/>
+      <outfile xil_pn:name="snake.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1400436122" xil_pn:in_ck="-7367595745342800059" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1400436118">
+    <transform xil_pn:end_ts="1400848351" xil_pn:in_ck="-7367595745342800059" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1400848348">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Snake.twr"/>
       <outfile xil_pn:name="Snake.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

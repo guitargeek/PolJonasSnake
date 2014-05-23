@@ -37,7 +37,7 @@ end
 
 always@(posedge REACHED_TARGET) begin
 	if(CURRENT_SCORE != 10)
-		NextScore <= NextScore + 1;
+		NextScore <= CURRENT_SCORE + 1;
 	else
 	  NextScore <= CURRENT_SCORE;
 end

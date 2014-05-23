@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+d:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf
 
 Design file:              Snake.ncd
@@ -44,44 +44,54 @@ Setup/Hold to clock CLOCK
                |Max Setup to|Max Hold to |                  | Clock  |
 Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------+------------+------------+------------------+--------+
-PUSH_BUTTONS<0>|    2.740(R)|   -0.199(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<1>|    3.083(R)|   -0.610(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<2>|    2.618(R)|   -0.316(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<3>|    1.526(R)|    0.265(R)|CLOCK_BUFGP       |   0.000|
-RESET          |    3.917(R)|   -0.074(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<0>|    4.365(R)|   -0.097(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<1>|    4.578(R)|   -0.563(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<2>|    3.362(R)|   -0.322(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<3>|    3.398(R)|    0.087(R)|CLOCK_BUFGP       |   0.000|
+RESET          |    5.154(R)|    0.926(R)|CLOCK_BUFGP       |   0.000|
 ---------------+------------+------------+------------------+--------+
 
 Clock CLOCK to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-HEX_OUT<0>  |   10.188(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<1>  |   10.104(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<2>  |   10.518(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<3>  |   10.530(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<4>  |   10.421(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<5>  |   10.398(R)|CLOCK_BUFGP       |   0.000|
-HEX_OUT<6>  |    9.728(R)|CLOCK_BUFGP       |   0.000|
-------------+------------+------------------+--------+
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+COLOUR_OUT<0>|    9.830(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<1>|    9.581(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<2>|    8.546(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<3>|    8.223(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<4>|    7.952(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<5>|    7.348(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<6>|    7.605(R)|CLOCK_BUFGP       |   0.000|
+COLOUR_OUT<7>|    8.228(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<0>   |    9.869(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<1>   |   10.468(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<2>   |   10.559(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<3>   |    9.467(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<4>   |    9.613(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<5>   |    9.420(R)|CLOCK_BUFGP       |   0.000|
+HEX_OUT<6>   |    9.003(R)|CLOCK_BUFGP       |   0.000|
+HS           |   10.733(R)|CLOCK_BUFGP       |   0.000|
+VS           |   11.499(R)|CLOCK_BUFGP       |   0.000|
+-------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLOCK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |    5.102|         |         |         |
+CLOCK          |    6.430|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun May 18 20:02:02 2014 
+Analysis completed Fri May 23 14:32:30 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 344 MB
+Peak Memory Usage: 135 MB
 
 
 

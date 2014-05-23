@@ -80,8 +80,8 @@ module Snake(
 					);
 
 wire Gameclock;					
-					
-GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(16))
+// Change this to adjust the snake's speed	
+GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(10))
 GameSpeed(
 		.CLK(VS),
 		.RESET(1'b0),
@@ -101,9 +101,10 @@ GameSpeed(
 					.RAND_ADDRH(RandomAddrH),
 					.RAND_ADDRV(RandomAddrV),
 					.DEBUG_OUT(LEDS),
-					.DEBUG_IN(SWITCHES)
+					.DEBUG_IN(SWITCHES),
+					.RESET(RESET)
 					);
-					
+
   VGAWrapper VGAWrp (
 					.CLK(CLOCK),
 					.MASTER_STATE(MasterState),

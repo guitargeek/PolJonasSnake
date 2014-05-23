@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
---> 
-Reading design: Snake.prj
+--> Reading design: Snake.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -147,7 +144,7 @@ Analyzing hierarchy for module <NavigationStateMachine> in library <work>.
 Analyzing hierarchy for module <RandomWrapper> in library <work>.
 
 Analyzing hierarchy for module <GenericCounter> in library <work> with parameters.
-	COUNTER_MAX = "00000000000000000000000000010000"
+	COUNTER_MAX = "00000000000000000000000000001010"
 	COUNTER_WIDTH = "00000000000000000000000000001000"
 
 Analyzing hierarchy for module <SnakeControl> in library <work>.
@@ -185,7 +182,6 @@ Analyzing hierarchy for module <GenericCounter> in library <work> with parameter
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <Snake>.
-WARNING:Xst:852 - "Snake.v" line 92: Unconnected input port 'RESET' of instance 'SnakeCtl' is tied to GND.
 Module <Snake> is correct for synthesis.
  
 Analyzing module <MasterStateMachine> in library <work>.
@@ -208,7 +204,7 @@ Analyzing module <PRandomVert> in library <work>.
 Module <PRandomVert> is correct for synthesis.
  
 Analyzing module <GenericCounter.1> in library <work>.
-	COUNTER_MAX = 32'sb00000000000000000000000000010000
+	COUNTER_MAX = 32'sb00000000000000000000000000001010
 	COUNTER_WIDTH = 32'sb00000000000000000000000000001000
 Module <GenericCounter.1> is correct for synthesis.
  
@@ -310,12 +306,12 @@ WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserv
 WARNING:Xst:647 - Input <MASTER_STATE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <REACHED_TARGET>.
     Found 8-bit register for signal <COLOUR>.
-    Found 7-bit adder for signal <$add0000> created at line 81.
-    Found 6-bit adder for signal <$add0001> created at line 84.
-    Found 6-bit subtractor for signal <$sub0000> created at line 87.
-    Found 7-bit subtractor for signal <$sub0001> created at line 90.
-    Found 7-bit subtractor for signal <$sub0002> created at line 95.
-    Found 6-bit subtractor for signal <$sub0003> created at line 97.
+    Found 7-bit adder for signal <$add0000> created at line 84.
+    Found 6-bit adder for signal <$add0001> created at line 87.
+    Found 6-bit subtractor for signal <$sub0000> created at line 90.
+    Found 7-bit subtractor for signal <$sub0001> created at line 93.
+    Found 7-bit subtractor for signal <$sub0002> created at line 98.
+    Found 6-bit subtractor for signal <$sub0003> created at line 100.
     Found 7-bit register for signal <ApplePositionH>.
     Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 50.
     Found 6-bit register for signal <ApplePositionV>.
@@ -328,11 +324,11 @@ WARNING:Xst:647 - Input <MASTER_STATE> is never used. This port will be preserve
     Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0001> created at line 59.
     Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0002> created at line 63.
     Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0003> created at line 63.
-    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 99.
-    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 99.
+    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 102.
+    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 102.
     Found 13-bit register for signal <SnakePosition>.
-    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 96.
-    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 94.
+    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 99.
+    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 97.
     Summary:
 	inferred  35 D-type flip-flop(s).
 	inferred   6 Adder/Subtractor(s).
@@ -343,10 +339,11 @@ Unit <SnakeControl> synthesized.
 Synthesizing Unit <ScoreCounter>.
     Related source file is "ScoreCounter.v".
     Found 4-bit register for signal <CURRENT_SCORE>.
-    Found 4-bit up counter for signal <NextScore>.
+    Found 4-bit register for signal <NextScore>.
+    Found 4-bit adder for signal <NextScore$add0000> created at line 40.
     Summary:
-	inferred   1 Counter(s).
-	inferred   4 D-type flip-flop(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
 Unit <ScoreCounter> synthesized.
 
 
@@ -452,22 +449,22 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 9
  10-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
  6-bit adder                                           : 1
  6-bit subtractor                                      : 2
  7-bit adder                                           : 1
  7-bit subtractor                                      : 2
  9-bit subtractor                                      : 1
-# Counters                                             : 4
+# Counters                                             : 3
  10-bit up counter                                     : 1
- 4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
 # Registers                                            : 31
- 1-bit register                                        : 19
+ 1-bit register                                        : 18
  10-bit register                                       : 1
- 4-bit register                                        : 1
+ 4-bit register                                        : 2
  6-bit register                                        : 1
  7-bit register                                        : 3
  8-bit register                                        : 5
@@ -519,8 +516,7 @@ Optimizing FSM <MasterSTM/CurrState/FSM> on signal <CurrState[1:2]> with user en
  10    | 10
 -------------------
 INFO:Xst:2261 - The FF/Latch <COLOUR_0> in Unit <SnakeCtl> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOUR_1> <COLOUR_2> 
-INFO:Xst:2261 - The FF/Latch <COLOUR_6> in Unit <SnakeCtl> is equivalent to the following FF/Latch, which will be removed : <COLOUR_7> 
-INFO:Xst:2261 - The FF/Latch <COLOUR_3> in Unit <SnakeCtl> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOUR_4> <COLOUR_5> 
+INFO:Xst:2261 - The FF/Latch <COLOUR_3> in Unit <SnakeCtl> is equivalent to the following 3 FFs/Latches, which will be removed : <COLOUR_4> <COLOUR_5> <COLOUR_7> 
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -529,20 +525,20 @@ Macro Statistics
 # FSMs                                                 : 2
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 9
  10-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
  6-bit adder                                           : 1
  6-bit subtractor                                      : 2
  7-bit adder                                           : 1
  7-bit subtractor                                      : 2
  9-bit subtractor                                      : 1
-# Counters                                             : 4
+# Counters                                             : 3
  10-bit up counter                                     : 1
- 4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 109
- Flip-Flops                                            : 109
+# Registers                                            : 112
+ Flip-Flops                                            : 112
 # Comparators                                          : 22
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 2
@@ -570,12 +566,13 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <COLOUR_0> in Unit <SnakeControl> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOUR_1> <COLOUR_2> 
-INFO:Xst:2261 - The FF/Latch <COLOUR_6> in Unit <SnakeControl> is equivalent to the following FF/Latch, which will be removed : <COLOUR_7> 
-INFO:Xst:2261 - The FF/Latch <COLOUR_3> in Unit <SnakeControl> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOUR_4> <COLOUR_5> 
+INFO:Xst:2261 - The FF/Latch <COLOUR_3> in Unit <SnakeControl> is equivalent to the following 3 FFs/Latches, which will be removed : <COLOUR_4> <COLOUR_5> <COLOUR_7> 
 
 Optimizing unit <Snake> ...
 
 Optimizing unit <SnakeControl> ...
+
+Optimizing unit <ScoreCounter> ...
 
 Optimizing unit <PRandomHorz> ...
 
@@ -594,11 +591,9 @@ WARNING:Xst:2677 - Node <RNDMWrp/vert_0> of sequential type is unconnected in bl
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_2> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/Colour_1> <VGAWrp/Colour_0> 
-INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_7> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <VGAWrp/Colour_6> 
-INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_4> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <VGAWrp/Colour_3> 
-INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_3> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <VGAWrp/VGACtl/COUT_4> 
+INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_7> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/Colour_4> <VGAWrp/Colour_3> 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_0> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_1> <VGAWrp/VGACtl/COUT_2> 
-INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_6> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <VGAWrp/VGACtl/COUT_7> 
+INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_3> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_4> <VGAWrp/VGACtl/COUT_7> 
 Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 6.
 
 Final Macro Processing ...
@@ -607,8 +602,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 127
- Flip-Flops                                            : 127
+# Registers                                            : 126
+ Flip-Flops                                            : 126
 
 =========================================================================
 
@@ -637,34 +632,32 @@ Design Statistics
 # IOs                              : 44
 
 Cell Usage :
-# BELS                             : 398
+# BELS                             : 403
 #      GND                         : 1
 #      INV                         : 9
 #      LUT1                        : 29
-#      LUT2                        : 87
-#      LUT2_D                      : 1
+#      LUT2                        : 86
 #      LUT2_L                      : 1
-#      LUT3                        : 30
-#      LUT3_D                      : 3
-#      LUT3_L                      : 3
-#      LUT4                        : 81
+#      LUT3                        : 36
+#      LUT3_D                      : 2
+#      LUT4                        : 79
 #      LUT4_D                      : 9
-#      LUT4_L                      : 10
+#      LUT4_L                      : 17
 #      MUXCY                       : 88
-#      MUXF5                       : 9
+#      MUXF5                       : 8
+#      MUXF6                       : 1
 #      VCC                         : 1
 #      XORCY                       : 36
-# FlipFlops/Latches                : 127
-#      FD                          : 16
+# FlipFlops/Latches                : 126
+#      FD                          : 9
 #      FDC                         : 15
 #      FDCE                        : 7
-#      FDE                         : 9
+#      FDE                         : 10
 #      FDPE                        : 6
-#      FDR                         : 63
-#      FDRS                        : 1
-#      FDS                         : 10
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+#      FDR                         : 69
+#      FDRS                        : 7
+#      FDS                         : 3
+# Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 35
 #      IBUF                        : 5
@@ -676,12 +669,12 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-4 
 
- Number of Slices:                      142  out of   2448     5%  
- Number of Slice Flip Flops:            127  out of   4896     2%  
- Number of 4 input LUTs:                263  out of   4896     5%  
+ Number of Slices:                      145  out of   2448     5%  
+ Number of Slice Flip Flops:            126  out of   4896     2%  
+ Number of 4 input LUTs:                268  out of   4896     5%  
  Number of IOs:                          44
  Number of bonded IOBs:                  36  out of     92    39%  
- Number of GCLKs:                         2  out of     24     8%  
+ Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -704,11 +697,10 @@ Clock Information:
 -----------------------------------+------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)        | Load  |
 -----------------------------------+------------------------------+-------+
-CLOCK                              | BUFGP                        | 57    |
+CLOCK                              | BUFGP                        | 99    |
 VS_OBUF(VGAWrp/VGACtl/VS10:O)      | NONE(*)(GameSpeed/TRIGG_OUT) | 9     |
-SnakeCtl/REACHED_TARGET            | NONE(ScoreCnt/NextScore_1)   | 4     |
 GameSpeed/TRIGG_OUT                | NONE(SnakeCtl/REACHED_TARGET)| 14    |
-VGAWrp/CLK251                      | BUFG                         | 43    |
+SnakeCtl/REACHED_TARGET            | NONE(ScoreCnt/NextScore_3)   | 4     |
 -----------------------------------+------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -728,7 +720,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 6.538ns (Maximum Frequency: 152.952MHz)
-   Minimum input arrival time before clock: 4.064ns
+   Minimum input arrival time before clock: 4.165ns
    Maximum output required time after clock: 7.556ns
    Maximum combinational path delay: No path found
 
@@ -738,113 +730,14 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
-  Clock period: 5.590ns (frequency: 178.891MHz)
-  Total number of paths / destination ports: 453 / 78
--------------------------------------------------------------------------
-Delay:               5.590ns (Levels of Logic = 9)
-  Source:            SnakeCtl/ApplePositionV_0 (FF)
-  Destination:       SnakeCtl/COLOUR_6 (FF)
-  Source Clock:      CLOCK rising
-  Destination Clock: CLOCK rising
-
-  Data Path: SnakeCtl/ApplePositionV_0 to SnakeCtl/COLOUR_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.591   0.610  SnakeCtl/ApplePositionV_0 (SnakeCtl/ApplePositionV_0)
-     LUT2:I1->O            1   0.704   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<0> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<0> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<2> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<3> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<4> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<4>)
-     MUXCY:CI->O           3   0.459   0.706  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<5> (SnakeCtl/COLOUR_cmp_le0001)
-     LUT2_L:I0->LO         1   0.704   0.104  SnakeCtl/COLOUR_mux0000<2>114_SW2 (N56)
-     LUT4:I3->O            1   0.704   0.000  SnakeCtl/COLOUR_and000141 (SnakeCtl/COLOUR_and00014)
-     FD:D                      0.308          SnakeCtl/COLOUR_6
-    ----------------------------------------
-    Total                      5.590ns (4.170ns logic, 1.420ns route)
-                                       (74.6% logic, 25.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'VS_OBUF'
-  Clock period: 4.788ns (frequency: 208.855MHz)
-  Total number of paths / destination ports: 108 / 17
--------------------------------------------------------------------------
-Delay:               4.788ns (Levels of Logic = 2)
-  Source:            GameSpeed/Counter_0 (FF)
-  Destination:       GameSpeed/Counter_0 (FF)
-  Source Clock:      VS_OBUF rising
-  Destination Clock: VS_OBUF rising
-
-  Data Path: GameSpeed/Counter_0 to GameSpeed/Counter_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.591   0.622  GameSpeed/Counter_0 (GameSpeed/Counter_0)
-     LUT4_D:I0->O          1   0.704   0.499  GameSpeed/Counter_cmp_eq000024 (GameSpeed/Counter_cmp_eq000024)
-     LUT2:I1->O            8   0.704   0.757  GameSpeed/Counter_cmp_eq000025 (GameSpeed/Counter_cmp_eq0000)
-     FDR:R                     0.911          GameSpeed/Counter_0
-    ----------------------------------------
-    Total                      4.788ns (2.910ns logic, 1.878ns route)
-                                       (60.8% logic, 39.2% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SnakeCtl/REACHED_TARGET'
-  Clock period: 2.656ns (frequency: 376.506MHz)
-  Total number of paths / destination ports: 10 / 4
--------------------------------------------------------------------------
-Delay:               2.656ns (Levels of Logic = 1)
-  Source:            ScoreCnt/NextScore_0 (FF)
-  Destination:       ScoreCnt/NextScore_0 (FF)
-  Source Clock:      SnakeCtl/REACHED_TARGET rising
-  Destination Clock: SnakeCtl/REACHED_TARGET rising
-
-  Data Path: ScoreCnt/NextScore_0 to ScoreCnt/NextScore_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              5   0.591   0.633  ScoreCnt/NextScore_0 (ScoreCnt/NextScore_0)
-     INV:I->O              1   0.704   0.420  ScoreCnt/Mcount_NextScore_xor<0>11_INV_0 (Result<0>1)
-     FDR:D                     0.308          ScoreCnt/NextScore_0
-    ----------------------------------------
-    Total                      2.656ns (1.603ns logic, 1.053ns route)
-                                       (60.4% logic, 39.6% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'GameSpeed/TRIGG_OUT'
-  Clock period: 5.997ns (frequency: 166.750MHz)
-  Total number of paths / destination ports: 229 / 19
--------------------------------------------------------------------------
-Delay:               5.997ns (Levels of Logic = 3)
-  Source:            SnakeCtl/SnakePosition_0 (FF)
-  Destination:       SnakeCtl/REACHED_TARGET (FF)
-  Source Clock:      GameSpeed/TRIGG_OUT rising
-  Destination Clock: GameSpeed/TRIGG_OUT rising
-
-  Data Path: SnakeCtl/SnakePosition_0 to SnakeCtl/REACHED_TARGET
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              12   0.591   1.040  SnakeCtl/SnakePosition_0 (SnakeCtl/SnakePosition_0)
-     LUT4:I1->O            1   0.704   0.499  SnakeCtl/REACHED_TARGET_and0000_inv93 (SnakeCtl/REACHED_TARGET_and0000_inv93)
-     LUT4:I1->O            1   0.704   0.424  SnakeCtl/REACHED_TARGET_and0000_inv136 (SnakeCtl/REACHED_TARGET_and0000_inv136)
-     LUT4:I3->O            1   0.704   0.420  SnakeCtl/REACHED_TARGET_and0000_inv234 (SnakeCtl/REACHED_TARGET_and0000_inv)
-     FDR:R                     0.911          SnakeCtl/REACHED_TARGET
-    ----------------------------------------
-    Total                      5.997ns (3.614ns logic, 2.383ns route)
-                                       (60.3% logic, 39.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'VGAWrp/CLK251'
   Clock period: 6.538ns (frequency: 152.952MHz)
-  Total number of paths / destination ports: 841 / 81
+  Total number of paths / destination ports: 1457 / 164
 -------------------------------------------------------------------------
 Delay:               6.538ns (Levels of Logic = 3)
   Source:            VGAWrp/VGACtl/CountVer/Counter_0 (FF)
   Destination:       VGAWrp/VGACtl/ADDRH_0 (FF)
-  Source Clock:      VGAWrp/CLK251 rising
-  Destination Clock: VGAWrp/CLK251 rising
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
 
   Data Path: VGAWrp/VGACtl/CountVer/Counter_0 to VGAWrp/VGACtl/ADDRH_0
                                 Gate     Net
@@ -860,10 +753,58 @@ Delay:               6.538ns (Levels of Logic = 3)
                                        (55.3% logic, 44.7% route)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'VS_OBUF'
+  Clock period: 4.788ns (frequency: 208.855MHz)
+  Total number of paths / destination ports: 108 / 17
+-------------------------------------------------------------------------
+Delay:               4.788ns (Levels of Logic = 2)
+  Source:            GameSpeed/Counter_4 (FF)
+  Destination:       GameSpeed/Counter_0 (FF)
+  Source Clock:      VS_OBUF rising
+  Destination Clock: VS_OBUF rising
+
+  Data Path: GameSpeed/Counter_4 to GameSpeed/Counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  GameSpeed/Counter_4 (GameSpeed/Counter_4)
+     LUT4_D:I0->O          1   0.704   0.499  GameSpeed/Counter_cmp_eq000023 (GameSpeed/Counter_cmp_eq000023)
+     LUT2:I1->O            8   0.704   0.757  GameSpeed/Counter_cmp_eq000024 (GameSpeed/Counter_cmp_eq0000)
+     FDR:R                     0.911          GameSpeed/Counter_0
+    ----------------------------------------
+    Total                      4.788ns (2.910ns logic, 1.878ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GameSpeed/TRIGG_OUT'
+  Clock period: 6.397ns (frequency: 156.323MHz)
+  Total number of paths / destination ports: 309 / 19
+-------------------------------------------------------------------------
+Delay:               6.397ns (Levels of Logic = 4)
+  Source:            SnakeCtl/SnakePosition_2 (FF)
+  Destination:       SnakeCtl/SnakePosition_4 (FF)
+  Source Clock:      GameSpeed/TRIGG_OUT rising
+  Destination Clock: GameSpeed/TRIGG_OUT rising
+
+  Data Path: SnakeCtl/SnakePosition_2 to SnakeCtl/SnakePosition_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.591   1.136  SnakeCtl/SnakePosition_2 (SnakeCtl/SnakePosition_2)
+     LUT4_D:I0->LO         1   0.704   0.104  SnakeCtl/SnakePosition_6_cmp_gt00001_SW0 (N117)
+     LUT4:I3->O           13   0.704   0.987  SnakeCtl/SnakePosition_6_cmp_gt00001 (SnakeCtl/SnakePosition_6_cmp_gt0000)
+     LUT4:I3->O            1   0.704   0.455  SnakeCtl/SnakePosition_4_mux000023 (SnakeCtl/SnakePosition_4_mux000023)
+     LUT4:I2->O            1   0.704   0.000  SnakeCtl/SnakePosition_4_mux000086 (SnakeCtl/SnakePosition_4_mux0000)
+     FDR:D                     0.308          SnakeCtl/SnakePosition_4
+    ----------------------------------------
+    Total                      6.397ns (3.715ns logic, 2.682ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
   Total number of paths / destination ports: 22 / 11
 -------------------------------------------------------------------------
-Offset:              4.064ns (Levels of Logic = 3)
+Offset:              4.095ns (Levels of Logic = 3)
   Source:            PUSH_BUTTONS<3> (PAD)
   Destination:       MasterSTM/CurrState_FSM_FFd2 (FF)
   Destination Clock: CLOCK rising
@@ -873,21 +814,41 @@ Offset:              4.064ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.218   0.706  PUSH_BUTTONS_3_IBUF (PUSH_BUTTONS_3_IBUF)
-     LUT4:I0->O            1   0.704   0.424  MasterSTM/CurrState_FSM_FFd2-In_SW0 (N27)
-     LUT4:I3->O            1   0.704   0.000  MasterSTM/CurrState_FSM_FFd2-In (MasterSTM/CurrState_FSM_FFd2-In)
+     LUT4:I0->O            1   0.704   0.455  MasterSTM/CurrState_FSM_FFd2-In_SW0 (N31)
+     LUT4:I2->O            1   0.704   0.000  MasterSTM/CurrState_FSM_FFd2-In (MasterSTM/CurrState_FSM_FFd2-In)
      FDR:D                     0.308          MasterSTM/CurrState_FSM_FFd2
     ----------------------------------------
-    Total                      4.064ns (2.934ns logic, 1.130ns route)
-                                       (72.2% logic, 27.8% route)
+    Total                      4.095ns (2.934ns logic, 1.161ns route)
+                                       (71.6% logic, 28.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'VGAWrp/CLK251'
-  Total number of paths / destination ports: 21 / 10
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GameSpeed/TRIGG_OUT'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.165ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       SnakeCtl/REACHED_TARGET (FF)
+  Destination Clock: GameSpeed/TRIGG_OUT rising
+
+  Data Path: RESET to SnakeCtl/REACHED_TARGET
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   1.218   1.268  RESET_IBUF (RESET_IBUF)
+     INV:I->O              1   0.704   0.420  SnakeCtl/RESET_inv1_INV_0 (SnakeCtl/RESET_inv)
+     FDE:CE                    0.555          SnakeCtl/REACHED_TARGET
+    ----------------------------------------
+    Total                      4.165ns (2.477ns logic, 1.688ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 49 / 17
 -------------------------------------------------------------------------
 Offset:              7.556ns (Levels of Logic = 3)
   Source:            VGAWrp/VGACtl/CountVer/Counter_2 (FF)
   Destination:       VS (PAD)
-  Source Clock:      VGAWrp/CLK251 rising
+  Source Clock:      CLOCK rising
 
   Data Path: VGAWrp/VGACtl/CountVer/Counter_2 to VS
                                 Gate     Net
@@ -905,7 +866,7 @@ Offset:              7.556ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GameSpeed/TRIGG_OUT'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              4.620ns (Levels of Logic = 1)
+Offset:              4.863ns (Levels of Logic = 1)
   Source:            SnakeCtl/SnakePosition_10 (FF)
   Destination:       LEDS<3> (PAD)
   Source Clock:      GameSpeed/TRIGG_OUT rising
@@ -914,44 +875,23 @@ Offset:              4.620ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.591   0.757  SnakeCtl/SnakePosition_10 (SnakeCtl/SnakePosition_10)
+     FDRS:C->Q            14   0.591   1.000  SnakeCtl/SnakePosition_10 (SnakeCtl/SnakePosition_10)
      OBUF:I->O                 3.272          LEDS_3_OBUF (LEDS<3>)
     ----------------------------------------
-    Total                      4.620ns (3.863ns logic, 0.757ns route)
-                                       (83.6% logic, 16.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
-  Total number of paths / destination ports: 28 / 7
--------------------------------------------------------------------------
-Offset:              5.919ns (Levels of Logic = 2)
-  Source:            ScoreCnt/CURRENT_SCORE_1 (FF)
-  Destination:       HEX_OUT<6> (PAD)
-  Source Clock:      CLOCK rising
-
-  Data Path: ScoreCnt/CURRENT_SCORE_1 to HEX_OUT<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              8   0.591   0.932  ScoreCnt/CURRENT_SCORE_1 (ScoreCnt/CURRENT_SCORE_1)
-     LUT4:I0->O            1   0.704   0.420  Seg7Dec/Mrom_BIN_IN_rom000021 (HEX_OUT_2_OBUF)
-     OBUF:I->O                 3.272          HEX_OUT_2_OBUF (HEX_OUT<2>)
-    ----------------------------------------
-    Total                      5.919ns (4.567ns logic, 1.352ns route)
-                                       (77.2% logic, 22.8% route)
+    Total                      4.863ns (3.863ns logic, 1.000ns route)
+                                       (79.4% logic, 20.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.33 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.13 secs
  
 --> 
 
-
-Total memory usage is 521296 kilobytes
+Total memory usage is 227952 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 

@@ -660,3 +660,53 @@ map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_m
 par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
 bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "C:/Users/Pol/ISE/PolJonasSnake/Snake.xst" -ofn "C:/Users/Pol/ISE/PolJonasSnake/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf Snake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 

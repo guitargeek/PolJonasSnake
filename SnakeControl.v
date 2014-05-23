@@ -63,43 +63,47 @@ module SnakeControl(
 		else if (ADDRH > {SnakePosition[6:0], 3'b000} && ADDRV > {SnakePosition[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition[6:0], 3'b111} &&  ADDRV <= {SnakePosition[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
+		else
+			COLOUR <= 8'b01000000;
 		//draw borders
+		/*
 		else if(ADDRH == 0 || ADDRV == 0 || ADDRH == 640 || ADDRV == 480)
 			COLOUR <= 8'b00111000;
 		else
 			COLOUR <= 8'b00000000;
-			
+		*/	
 end
 		
 always@(posedge GAMECLOCK) begin
 		if(RESET)
 			SnakePosition <= {7'b0000000, 6'b000000};
-		else
-		// moving the snake
-		case(NAVIGATION_STATE)
-		2'b00: begin // the right direction
-			SnakePosition[6:0] <= SnakePosition[6:0] + 1; // Plus in H
+		else begin
+			// moving the snake
+			case(NAVIGATION_STATE)
+			2'b00: begin // the right direction
+				SnakePosition[6:0] <= SnakePosition[6:0] + 1; // Plus in H
+			end
+			3'b01: begin // the down state
+				SnakePosition[12:7] <= SnakePosition[12:7] + 1; // Plus in V
+			end
+			2'b10: begin // the up direction
+				SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Minus in V
+			end
+			2'b11: begin // the left state
+				SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Minus in H
+			end
+			endcase
+			// prevent the snake from leaving the screen
+			if(SnakePosition[6:0] > 72)
+				SnakePosition[6:0] <= SnakePosition[6:0] - 72;
+			if(SnakePosition[12:7] > 52)
+				SnakePosition[12:7] <= SnakePosition[12:7] - 52;
+			// checking if we hit an apple
+			if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
+				REACHED_TARGET <= 1;
+			else
+				REACHED_TARGET <= 0;
 		end
-		3'b01: begin // the down state
-			SnakePosition[12:7] <= SnakePosition[12:7] + 1; // Plus in H
-		end
-		2'b10: begin // the up direction
-			SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Plus in H
-		end
-		2'b11: begin // the left state
-			SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Plus in H
-		end
-		endcase
-//		// prevent the snake from leaving the screen
-//		if(SnakePosition[6:0] > 72)
-//			SnakePosition[6:0] <= SnakePosition[6:0] - 72;
-//		if(SnakePosition[12:7] > 52)
-//			SnakePosition[12:7] <= SnakePosition[6:0] - 52;
-		// checking if we hit an apple
-		if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
-			REACHED_TARGET <= 1;
-		else
-			REACHED_TARGET <= 0;
 	 end
 	 
 
