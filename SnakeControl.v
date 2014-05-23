@@ -22,8 +22,8 @@ module SnakeControl(
 	 input CLK,
 	 input RESET,
 	 input GAMECLOCK,
-    input [9:0] ADDRH,
-    input [8:0] ADDRV,
+     input [9:0] ADDRH,
+     input [8:0] ADDRV,
 	 output reg [7:0] COLOUR,
 	 output reg REACHED_TARGET,
 	 input [1:0] MASTER_STATE,
@@ -87,10 +87,16 @@ always@(posedge GAMECLOCK) begin
 				SnakePosition[12:7] <= SnakePosition[12:7] + 1; // Plus in V
 			end
 			2'b10: begin // the up direction
-				SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Minus in V
+				if(SnakePosition[12:7] == 0)
+					SnakePosition[12:7] <= 52;
+				else
+					SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Minus in V
 			end
 			2'b11: begin // the left state
-				SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Minus in H
+				if(SnakePosition[6:0] == 0)
+					SnakePosition[6:0] <= 72;
+				else
+					SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Minus in H
 			end
 			endcase
 			// prevent the snake from leaving the screen

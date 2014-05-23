@@ -26,7 +26,7 @@ module ScoreCounter(
 		output reg [3:0] CURRENT_SCORE
     );
 
-reg [3:0] NextScore = 0;
+/*reg [3:0] NextScore = 0;
 
 always@(posedge CLK) begin
 	if(RESET)
@@ -40,6 +40,15 @@ always@(posedge REACHED_TARGET) begin
 		NextScore <= CURRENT_SCORE + 1;
 	else
 	  NextScore <= CURRENT_SCORE;
+end*/
+
+always@(RESET)
+	CURRENT_SCORE <= 0;
+	
+always@(posedge REACHED_TARGET) begin
+	if(~ RESET)
+		CURRENT_SCORE <= CURRENT_SCORE +1;
+		
 end
 
 endmodule

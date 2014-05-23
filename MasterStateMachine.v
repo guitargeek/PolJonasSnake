@@ -56,11 +56,10 @@ always@(PUSH_BUTTONS or SCORE_IN) begin
 			else
 				NextState <= CurrState;	
 		end
-		2'b10: begin
+		2'b10:
 			NextState <= CurrState;		
-		end
-		default:
-			NextState <= CurrState;
+		2'b11: // Something went wrong... RESET
+			NextState <= 2'b00;
 	endcase
 end
 

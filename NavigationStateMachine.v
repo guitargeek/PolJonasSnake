@@ -76,8 +76,6 @@ always@(PUSH_BUTTONS) begin
 			else
 				NextState <= CurrState;		
 		end
-		default:
-			NextState <= CurrState;
 	endcase
 end
 
