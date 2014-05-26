@@ -102,31 +102,31 @@ module SnakeControl(
 		else if (SNAKE_LEN >5 && ADDRH > {SnakePosition5[6:0], 3'b000} && ADDRV > {SnakePosition5[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition5[6:0], 3'b111} &&  ADDRV <= {SnakePosition5[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >7 && ADDRH > {SnakePosition6[6:0], 3'b000} && ADDRV > {SnakePosition6[12:7], 3'b000}
+		else if (SNAKE_LEN >6 && ADDRH > {SnakePosition6[6:0], 3'b000} && ADDRV > {SnakePosition6[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition6[6:0], 3'b111} &&  ADDRV <= {SnakePosition6[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >8 && ADDRH > {SnakePosition7[6:0], 3'b000} && ADDRV > {SnakePosition7[12:7], 3'b000}
+		else if (SNAKE_LEN >7 && ADDRH > {SnakePosition7[6:0], 3'b000} && ADDRV > {SnakePosition7[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition7[6:0], 3'b111} &&  ADDRV <= {SnakePosition7[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >9 && ADDRH > {SnakePosition8[6:0], 3'b000} && ADDRV > {SnakePosition8[12:7], 3'b000}
+		else if (SNAKE_LEN >8 && ADDRH > {SnakePosition8[6:0], 3'b000} && ADDRV > {SnakePosition8[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition8[6:0], 3'b111} &&  ADDRV <= {SnakePosition8[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >10 && ADDRH > {SnakePosition9[6:0], 3'b000} && ADDRV > {SnakePosition9[12:7], 3'b000}
+		else if (SNAKE_LEN >9 && ADDRH > {SnakePosition9[6:0], 3'b000} && ADDRV > {SnakePosition9[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition9[6:0], 3'b111} &&  ADDRV <= {SnakePosition9[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >11 && ADDRH > {SnakePosition10[6:0], 3'b000} && ADDRV > {SnakePosition10[12:7], 3'b000}
+		else if (SNAKE_LEN >10 && ADDRH > {SnakePosition10[6:0], 3'b000} && ADDRV > {SnakePosition10[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition10[6:0], 3'b111} &&  ADDRV <= {SnakePosition10[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >12 && ADDRH > {SnakePosition11[6:0], 3'b000} && ADDRV > {SnakePosition11[12:7], 3'b000}
+		else if (SNAKE_LEN >11 && ADDRH > {SnakePosition11[6:0], 3'b000} && ADDRV > {SnakePosition11[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition11[6:0], 3'b111} &&  ADDRV <= {SnakePosition11[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >13 && ADDRH > {SnakePosition12[6:0], 3'b000} && ADDRV > {SnakePosition12[12:7], 3'b000}
+		else if (SNAKE_LEN >12 && ADDRH > {SnakePosition12[6:0], 3'b000} && ADDRV > {SnakePosition12[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition12[6:0], 3'b111} &&  ADDRV <= {SnakePosition12[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >14 && ADDRH > {SnakePosition13[6:0], 3'b000} && ADDRV > {SnakePosition13[12:7], 3'b000}
+		else if (SNAKE_LEN >13 && ADDRH > {SnakePosition13[6:0], 3'b000} && ADDRV > {SnakePosition13[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition13[6:0], 3'b111} &&  ADDRV <= {SnakePosition13[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (SNAKE_LEN >15 && ADDRH > {SnakePosition14[6:0], 3'b000} && ADDRV > {SnakePosition14[12:7], 3'b000}
+		else if (SNAKE_LEN >14 && ADDRH > {SnakePosition14[6:0], 3'b000} && ADDRV > {SnakePosition14[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition14[6:0], 3'b111} &&  ADDRV <= {SnakePosition14[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
 		else
