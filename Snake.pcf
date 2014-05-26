@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon May 26 15:07:29 2014
+// Written by: Map P.20131013 on Mon May 26 15:26:32 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,7 +9,7 @@ COMP "SEG_SELECT<0>" LOCATE = SITE "F12" LEVEL 1;
 COMP "SEG_SELECT<1>" LOCATE = SITE "J12" LEVEL 1;
 COMP "SEG_SELECT<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "SEG_SELECT<3>" LOCATE = SITE "K14" LEVEL 1;
-COMP "CLOCK" LOCATE = SITE "M6" LEVEL 1;
+COMP "CLOCK" LOCATE = SITE "B8" LEVEL 1;
 PIN CLOCK_pin<0> = BEL "CLOCK" PINNAME PAD;
 PIN "CLOCK_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "RESET" LOCATE = SITE "P11" LEVEL 1;

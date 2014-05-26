@@ -37,8 +37,8 @@ module VGAWrapper(
 		CLK25 <= ~CLK25;
 	 
 	VGAControl VGACtl (
-					.CLK(CLK),
-//					.CLK(CLK25),
+//					.CLK(CLK),
+					.CLK(CLK25),
 					.ADDRH(ADDRH),
 					.ADDRV(ADDRV),
 					.CIN(Colour),

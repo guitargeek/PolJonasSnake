@@ -44,47 +44,30 @@ Setup/Hold to clock CLOCK
                |Max Setup to|Max Hold to |                  | Clock  |
 Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------+------------+------------+------------------+--------+
-PUSH_BUTTONS<0>|    4.043(R)|    0.123(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<1>|    4.035(R)|   -0.355(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<2>|    5.049(R)|   -0.543(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<3>|    3.623(R)|    0.073(R)|CLOCK_BUFGP       |   0.000|
-RESET          |    3.721(R)|   -1.018(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<0>|    2.338(R)|   -0.059(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<1>|    2.754(R)|   -0.343(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<2>|    2.630(R)|   -0.781(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<3>|    2.681(R)|   -0.300(R)|CLOCK_BUFGP       |   0.000|
+RESET          |    2.919(R)|   -0.433(R)|CLOCK_BUFGP       |   0.000|
 ---------------+------------+------------+------------------+--------+
-
-Clock CLOCK to Pad
--------------+------------+------------------+--------+
-             | clk (edge) |                  | Clock  |
-Destination  |   to PAD   |Internal Clock(s) | Phase  |
--------------+------------+------------------+--------+
-COLOUR_OUT<0>|    9.017(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<1>|    8.769(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<2>|    8.276(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<3>|    7.957(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<4>|    8.216(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<5>|    8.192(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<6>|    8.398(R)|CLOCK_BUFGP       |   0.000|
-COLOUR_OUT<7>|    8.975(R)|CLOCK_BUFGP       |   0.000|
-HS           |   10.451(R)|CLOCK_BUFGP       |   0.000|
-VS           |   12.890(R)|CLOCK_BUFGP       |   0.000|
--------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLOCK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |    6.193|         |         |         |
+CLOCK          |    5.381|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon May 26 15:07:49 2014 
+Analysis completed Mon May 26 15:26:49 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 136 MB
+Peak Memory Usage: 135 MB
 
 
 

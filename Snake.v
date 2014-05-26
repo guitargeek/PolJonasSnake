@@ -81,7 +81,7 @@ module Snake(
 
 wire Gameclock;					
 // Change this to adjust the snake's speed	
-GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(10))
+GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(5))
 GameSpeed(
 		.CLK(VS),
 		.RESET(1'b0),

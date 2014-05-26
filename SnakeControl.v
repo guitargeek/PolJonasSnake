@@ -46,6 +46,7 @@ module SnakeControl(
 	 assign DEBUG_OUT = {2'b00, SnakePosition[12:7]};
 	 
 	 always@(posedge CLK) begin
+	 if (MASTER_STATE == 1) begin
 		//check if the apple would be outside the screen 
 		if({RAND_ADDRH[7:1], 3'b111} <= 640)
 			ApplePositionH <= RAND_ADDRH[7:1];
@@ -71,10 +72,12 @@ module SnakeControl(
 			COLOUR <= 8'b00111000;
 		else
 			COLOUR <= 8'b00000000;
-		*/	
-end
+		*/
+	end
+	end
 		
-always@(posedge GAMECLOCK) begin
+	always@(posedge GAMECLOCK) begin
+	if(MASTER_STATE == 1) begin
 		if(RESET)
 			SnakePosition <= {7'b0000000, 6'b000000};
 		else begin
@@ -88,28 +91,29 @@ always@(posedge GAMECLOCK) begin
 			end
 			2'b10: begin // the up direction
 				if(SnakePosition[12:7] == 0)
-					SnakePosition[12:7] <= 59;
+					SnakePosition[12:7] <= 58;
 				else
 					SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Minus in V
 			end
 			2'b11: begin // the left state
 				if(SnakePosition[6:0] == 0)
-					SnakePosition[6:0] <= 79;
+					SnakePosition[6:0] <= 78;
 				else
 					SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Minus in H
 			end
 			endcase
 			// prevent the snake from leaving the screen
-			if(SnakePosition[6:0] > 79)
-				SnakePosition[6:0] <= SnakePosition[6:0] - 79;
-			if(SnakePosition[12:7] > 59)
-				SnakePosition[12:7] <= SnakePosition[12:7] - 59;
+			if(SnakePosition[6:0] > 78)
+				SnakePosition[6:0] <= SnakePosition[6:0] - 78;
+			if(SnakePosition[12:7] > 58)
+				SnakePosition[12:7] <= SnakePosition[12:7] - 58;
 			// checking if we hit an apple
 			if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
 				REACHED_TARGET <= 1;
 			else
 				REACHED_TARGET <= 0;
 		end
+	 end
 	 end
 	 
 
