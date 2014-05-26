@@ -42,12 +42,12 @@ always@(posedge REACHED_TARGET) begin
 	  NextScore <= CURRENT_SCORE;
 end*/
 
-always@(RESET)
-	CURRENT_SCORE <= 0;
 	
-always@(posedge REACHED_TARGET) begin
-	if(~ RESET)
-		CURRENT_SCORE <= CURRENT_SCORE +1;
+always@(posedge REACHED_TARGET or posedge RESET) begin
+	if(RESET) 
+		CURRENT_SCORE <= 0;
+	else
+		CURRENT_SCORE <= CURRENT_SCORE+1;
 		
 end
 

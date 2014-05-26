@@ -13,10 +13,10 @@ NET "RESET" LOC = "P11" ;
 #NET "SWITCHES<7>" LOC  = "N3" ;
 
 
-NET "PUSH_BUTTONS<0>" LOC = "A7" ;
-NET "PUSH_BUTTONS<1>" LOC = "M4" ;
-NET "PUSH_BUTTONS<2>" LOC = "C11" ;
-NET "PUSH_BUTTONS<3>" LOC = "G12" ;
+NET "PUSH_BUTTONS<3>" LOC = "A7" ;   // left
+NET "PUSH_BUTTONS<2>" LOC = "M4" ;   // up
+NET "PUSH_BUTTONS<1>" LOC = "C11" ;  // down
+NET "PUSH_BUTTONS<0>" LOC = "G12" ;  // right
 
 // Horizontal and vertical sync
 NET "HS" LOC = "J14"; 
