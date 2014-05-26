@@ -88,7 +88,7 @@ GameSpeed(
  		.ENABLE_IN(1),
 		.TRIGG_OUT(Gameclock)
 );						
-					
+	
   SnakeControl SnakeCtl (
     				.CLK(CLOCK),
 					.GAMECLOCK(Gameclock),
@@ -102,7 +102,8 @@ GameSpeed(
 					.RAND_ADDRV(RandomAddrV),
 					.DEBUG_OUT(LEDS),
 					.DEBUG_IN(SWITCHES),
-					.RESET(RESET)
+					.RESET(RESET),
+					.SCORE(Score)
 					);
 
   VGAWrapper VGAWrp (

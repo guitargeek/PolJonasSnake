@@ -30,6 +30,7 @@ module SnakeControl(
 	 input [1:0] NAVIGATION_STATE,
 	 input [7:0] RAND_ADDRH,
 	 input [6:0] RAND_ADDRV,
+	 input [3:0] SCORE,
 	 output [7:0] DEBUG_OUT,
 	 input [7:0] DEBUG_IN
     );
@@ -51,11 +52,20 @@ module SnakeControl(
 	 reg [12:0] SnakePosition7 = {7'b0000000, 6'b000000};
 	 reg [12:0] SnakePosition8 = {7'b0000000, 6'b000000};
 	 reg [12:0] SnakePosition9 = {7'b0000000, 6'b000000};
-	 
+	 reg [12:0] SnakePosition10 = {7'b0000000, 6'b000000};
+	 reg [12:0] SnakePosition11 = {7'b0000000, 6'b000000};
+	 reg [12:0] SnakePosition12 = {7'b0000000, 6'b000000};
+	 reg [12:0] SnakePosition13 = {7'b0000000, 6'b000000};
+	 reg [12:0] SnakePosition14 = {7'b0000000, 6'b000000};
+
+	 wire [3:0] SNAKE_LEN;
+	 assign SNAKE_LEN = SCORE +3'd5;
+	  
 	 //assign SnakePosition = {5'b00000, DEBUG_IN};
 	 //assign DEBUG_OUT = {2'b00, SnakePosition[12:7]};
-	 assign DEBUG_OUT = 0;
-	 
+	 assign DEBUG_OUT = {4'b0000, SNAKE_LEN};
+		
+		
 	 always@(posedge CLK) begin
 	 if (MASTER_STATE == 1) begin
 		//check if the apple would be outside the screen 
@@ -77,32 +87,47 @@ module SnakeControl(
 			COLOUR <= 8'b11111111;
 			
 		// and its tail
-		else if (ADDRH > {SnakePosition1[6:0], 3'b000} && ADDRV > {SnakePosition1[12:7], 3'b000}
+		else if (SNAKE_LEN >1 && ADDRH > {SnakePosition1[6:0], 3'b000} && ADDRV > {SnakePosition1[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition1[6:0], 3'b111} &&  ADDRV <= {SnakePosition1[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition2[6:0], 3'b000} && ADDRV > {SnakePosition2[12:7], 3'b000}
+		else if (SNAKE_LEN >2 && ADDRH > {SnakePosition2[6:0], 3'b000} && ADDRV > {SnakePosition2[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition2[6:0], 3'b111} &&  ADDRV <= {SnakePosition2[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition3[6:0], 3'b000} && ADDRV > {SnakePosition3[12:7], 3'b000}
+		else if (SNAKE_LEN >3 && ADDRH > {SnakePosition3[6:0], 3'b000} && ADDRV > {SnakePosition3[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition3[6:0], 3'b111} &&  ADDRV <= {SnakePosition3[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition4[6:0], 3'b000} && ADDRV > {SnakePosition4[12:7], 3'b000}
+		else if (SNAKE_LEN >4 && ADDRH > {SnakePosition4[6:0], 3'b000} && ADDRV > {SnakePosition4[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition4[6:0], 3'b111} &&  ADDRV <= {SnakePosition4[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition5[6:0], 3'b000} && ADDRV > {SnakePosition5[12:7], 3'b000}
+		else if (SNAKE_LEN >5 && ADDRH > {SnakePosition5[6:0], 3'b000} && ADDRV > {SnakePosition5[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition5[6:0], 3'b111} &&  ADDRV <= {SnakePosition5[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition6[6:0], 3'b000} && ADDRV > {SnakePosition6[12:7], 3'b000}
+		else if (SNAKE_LEN >7 && ADDRH > {SnakePosition6[6:0], 3'b000} && ADDRV > {SnakePosition6[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition6[6:0], 3'b111} &&  ADDRV <= {SnakePosition6[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition7[6:0], 3'b000} && ADDRV > {SnakePosition7[12:7], 3'b000}
+		else if (SNAKE_LEN >8 && ADDRH > {SnakePosition7[6:0], 3'b000} && ADDRV > {SnakePosition7[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition7[6:0], 3'b111} &&  ADDRV <= {SnakePosition7[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition8[6:0], 3'b000} && ADDRV > {SnakePosition8[12:7], 3'b000}
+		else if (SNAKE_LEN >9 && ADDRH > {SnakePosition8[6:0], 3'b000} && ADDRV > {SnakePosition8[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition8[6:0], 3'b111} &&  ADDRV <= {SnakePosition8[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
-		else if (ADDRH > {SnakePosition9[6:0], 3'b000} && ADDRV > {SnakePosition9[12:7], 3'b000}
+		else if (SNAKE_LEN >10 && ADDRH > {SnakePosition9[6:0], 3'b000} && ADDRV > {SnakePosition9[12:7], 3'b000}
 			&& ADDRH <= {SnakePosition9[6:0], 3'b111} &&  ADDRV <= {SnakePosition9[12:7], 3'b111})
+			COLOUR <= 8'b11111111;
+		else if (SNAKE_LEN >11 && ADDRH > {SnakePosition10[6:0], 3'b000} && ADDRV > {SnakePosition10[12:7], 3'b000}
+			&& ADDRH <= {SnakePosition10[6:0], 3'b111} &&  ADDRV <= {SnakePosition10[12:7], 3'b111})
+			COLOUR <= 8'b11111111;
+		else if (SNAKE_LEN >12 && ADDRH > {SnakePosition11[6:0], 3'b000} && ADDRV > {SnakePosition11[12:7], 3'b000}
+			&& ADDRH <= {SnakePosition11[6:0], 3'b111} &&  ADDRV <= {SnakePosition11[12:7], 3'b111})
+			COLOUR <= 8'b11111111;
+		else if (SNAKE_LEN >13 && ADDRH > {SnakePosition12[6:0], 3'b000} && ADDRV > {SnakePosition12[12:7], 3'b000}
+			&& ADDRH <= {SnakePosition12[6:0], 3'b111} &&  ADDRV <= {SnakePosition12[12:7], 3'b111})
+			COLOUR <= 8'b11111111;
+		else if (SNAKE_LEN >14 && ADDRH > {SnakePosition13[6:0], 3'b000} && ADDRV > {SnakePosition13[12:7], 3'b000}
+			&& ADDRH <= {SnakePosition13[6:0], 3'b111} &&  ADDRV <= {SnakePosition13[12:7], 3'b111})
+			COLOUR <= 8'b11111111;
+		else if (SNAKE_LEN >15 && ADDRH > {SnakePosition14[6:0], 3'b000} && ADDRV > {SnakePosition14[12:7], 3'b000}
+			&& ADDRH <= {SnakePosition14[6:0], 3'b111} &&  ADDRV <= {SnakePosition14[12:7], 3'b111})
 			COLOUR <= 8'b11111111;
 		else
 			COLOUR <= 8'b01000000;
@@ -110,8 +135,7 @@ module SnakeControl(
 	end
 		
 	always@(posedge GAMECLOCK) begin
-	if(MASTER_STATE == 1) begin
-		if(RESET) begin
+		if(MASTER_STATE == 0) begin
 			SnakePosition <= {7'b0000000, 6'b000000};
 			SnakePosition1 <= {7'b0000000, 6'b000000};
 			SnakePosition2 <= {7'b0000000, 6'b000000};
@@ -122,8 +146,12 @@ module SnakeControl(
 			SnakePosition7 <= {7'b0000000, 6'b000000};
 			SnakePosition8 <= {7'b0000000, 6'b000000};
 			SnakePosition9 <= {7'b0000000, 6'b000000};
-		end
-		else begin
+			SnakePosition10 <= {7'b0000000, 6'b000000};
+			SnakePosition11 <= {7'b0000000, 6'b000000};
+			SnakePosition12 <= {7'b0000000, 6'b000000};
+			SnakePosition13 <= {7'b0000000, 6'b000000};
+			SnakePosition14 <= {7'b0000000, 6'b000000};
+		end else if(MASTER_STATE == 1) begin
 			//shift the snake register
 			SnakePosition1 <= SnakePosition;
 			SnakePosition2 <= SnakePosition1;
@@ -134,7 +162,11 @@ module SnakeControl(
 			SnakePosition7 <= SnakePosition6;
 			SnakePosition8 <= SnakePosition7;
 			SnakePosition9 <= SnakePosition8;
-			
+			SnakePosition10 <= SnakePosition9;
+			SnakePosition11 <= SnakePosition10;
+			SnakePosition12 <= SnakePosition11;
+			SnakePosition13 <= SnakePosition12;
+			SnakePosition14 <= SnakePosition13;
 			
 			// moving the snake
 			case(NAVIGATION_STATE)
@@ -168,7 +200,6 @@ module SnakeControl(
 			else
 				REACHED_TARGET <= 0;
 		end
-	 end
 	 end
 	 
 

@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: Snake.prj
@@ -301,67 +301,103 @@ Unit <GenericCounter_1> synthesized.
 
 Synthesizing Unit <SnakeControl>.
     Related source file is "SnakeControl.v".
+WARNING:Xst:647 - Input <RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <DEBUG_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RAND_ADDRH<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <SnakePosition14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <REACHED_TARGET>.
     Found 8-bit register for signal <COLOUR>.
-    Found 7-bit adder for signal <$add0000> created at line 142.
-    Found 6-bit adder for signal <$add0001> created at line 145.
-    Found 6-bit subtractor for signal <$sub0000> created at line 151.
-    Found 7-bit subtractor for signal <$sub0001> created at line 157.
+    Found 7-bit adder for signal <$add0000> created at line 174.
+    Found 6-bit adder for signal <$add0001> created at line 177.
+    Found 6-bit subtractor for signal <$sub0000> created at line 183.
+    Found 7-bit subtractor for signal <$sub0001> created at line 189.
     Found 7-bit register for signal <ApplePositionH>.
-    Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 62.
+    Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 72.
     Found 6-bit register for signal <ApplePositionV>.
-    Found 10-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 66.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0000> created at line 71.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0001> created at line 71.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0002> created at line 75.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0003> created at line 75.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0004> created at line 80.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0005> created at line 80.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0006> created at line 83.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0007> created at line 83.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0008> created at line 86.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0009> created at line 86.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0010> created at line 89.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0011> created at line 89.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0012> created at line 92.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0013> created at line 92.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0014> created at line 95.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0015> created at line 95.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0016> created at line 98.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0017> created at line 98.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0018> created at line 101.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0019> created at line 101.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0020> created at line 104.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0021> created at line 104.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0000> created at line 71.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0001> created at line 71.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0002> created at line 75.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0003> created at line 75.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0004> created at line 80.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0005> created at line 80.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0006> created at line 83.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0007> created at line 83.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0008> created at line 86.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0009> created at line 86.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0010> created at line 89.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0011> created at line 89.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0012> created at line 92.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0013> created at line 92.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0014> created at line 95.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0015> created at line 95.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0016> created at line 98.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0017> created at line 98.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0018> created at line 101.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0019> created at line 101.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0020> created at line 104.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0021> created at line 104.
-    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 166.
-    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 166.
+    Found 10-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 76.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0000> created at line 81.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0001> created at line 81.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0002> created at line 85.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0003> created at line 85.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0004> created at line 90.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0005> created at line 90.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0006> created at line 90.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0007> created at line 93.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0008> created at line 93.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0009> created at line 93.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0010> created at line 96.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0011> created at line 96.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0012> created at line 96.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0013> created at line 99.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0014> created at line 99.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0015> created at line 99.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0016> created at line 102.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0017> created at line 102.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0018> created at line 102.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0019> created at line 105.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0020> created at line 105.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0021> created at line 105.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0022> created at line 108.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0023> created at line 108.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0024> created at line 108.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0025> created at line 111.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0026> created at line 111.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0027> created at line 111.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0028> created at line 114.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0029> created at line 114.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0030> created at line 114.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0031> created at line 117.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0032> created at line 117.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0033> created at line 117.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0034> created at line 120.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0035> created at line 120.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0036> created at line 120.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0037> created at line 123.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0038> created at line 123.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0039> created at line 123.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0040> created at line 126.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0041> created at line 126.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0042> created at line 126.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0000> created at line 81.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0001> created at line 81.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0002> created at line 85.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0003> created at line 85.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0004> created at line 90.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0005> created at line 90.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0006> created at line 93.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0007> created at line 93.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0008> created at line 96.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0009> created at line 96.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0010> created at line 99.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0011> created at line 99.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0012> created at line 102.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0013> created at line 102.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0014> created at line 105.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0015> created at line 105.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0016> created at line 108.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0017> created at line 108.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0018> created at line 111.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0019> created at line 111.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0020> created at line 114.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0021> created at line 114.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0022> created at line 117.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0023> created at line 117.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0024> created at line 120.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0025> created at line 120.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0026> created at line 123.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0027> created at line 123.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0028> created at line 126.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0029> created at line 126.
+    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 198.
+    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 198.
+    Found 4-bit adder for signal <SNAKE_LEN>.
     Found 13-bit register for signal <SnakePosition>.
     Found 13-bit register for signal <SnakePosition1>.
+    Found 13-bit register for signal <SnakePosition10>.
+    Found 13-bit register for signal <SnakePosition11>.
+    Found 13-bit register for signal <SnakePosition12>.
+    Found 13-bit register for signal <SnakePosition13>.
     Found 13-bit register for signal <SnakePosition2>.
     Found 13-bit register for signal <SnakePosition3>.
     Found 13-bit register for signal <SnakePosition4>.
@@ -370,12 +406,12 @@ WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserv
     Found 13-bit register for signal <SnakePosition7>.
     Found 13-bit register for signal <SnakePosition8>.
     Found 13-bit register for signal <SnakePosition9>.
-    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 163.
-    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 161.
+    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 195.
+    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 193.
     Summary:
-	inferred 152 D-type flip-flop(s).
-	inferred   4 Adder/Subtractor(s).
-	inferred  50 Comparator(s).
+	inferred 204 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  79 Comparator(s).
 Unit <SnakeControl> synthesized.
 
 
@@ -490,8 +526,9 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 7
  10-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  7-bit adder                                           : 1
@@ -502,19 +539,20 @@ Macro Statistics
  4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 39
+# Registers                                            : 43
  1-bit register                                        : 19
  10-bit register                                       : 1
- 13-bit register                                       : 9
+ 13-bit register                                       : 13
  6-bit register                                        : 1
  7-bit register                                        : 3
  8-bit register                                        : 5
  9-bit register                                        : 1
-# Comparators                                          : 58
+# Comparators                                          : 87
  10-bit comparator greatequal                          : 1
- 10-bit comparator greater                             : 11
+ 10-bit comparator greater                             : 15
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 13
+ 10-bit comparator lessequal                           : 17
+ 4-bit comparator greater                              : 13
  6-bit comparator equal                                : 1
  6-bit comparator greater                              : 1
  7-bit comparator equal                                : 1
@@ -522,9 +560,9 @@ Macro Statistics
  7-bit comparator less                                 : 1
  8-bit comparator less                                 : 1
  9-bit comparator greatequal                           : 1
- 9-bit comparator greater                              : 11
+ 9-bit comparator greater                              : 15
  9-bit comparator less                                 : 2
- 9-bit comparator lessequal                            : 11
+ 9-bit comparator lessequal                            : 15
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Xors                                                 : 2
@@ -565,8 +603,9 @@ Macro Statistics
 # FSMs                                                 : 2
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 7
  10-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  7-bit adder                                           : 1
@@ -577,13 +616,14 @@ Macro Statistics
  4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 222
- Flip-Flops                                            : 222
-# Comparators                                          : 58
+# Registers                                            : 274
+ Flip-Flops                                            : 274
+# Comparators                                          : 87
  10-bit comparator greatequal                          : 1
- 10-bit comparator greater                             : 11
+ 10-bit comparator greater                             : 15
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 13
+ 10-bit comparator lessequal                           : 17
+ 4-bit comparator greater                              : 13
  6-bit comparator equal                                : 1
  6-bit comparator greater                              : 1
  7-bit comparator equal                                : 1
@@ -591,9 +631,9 @@ Macro Statistics
  7-bit comparator less                                 : 1
  8-bit comparator less                                 : 1
  9-bit comparator greatequal                           : 1
- 9-bit comparator greater                              : 11
+ 9-bit comparator greater                              : 15
  9-bit comparator less                                 : 2
- 9-bit comparator lessequal                            : 11
+ 9-bit comparator lessequal                            : 15
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Xors                                                 : 2
@@ -632,7 +672,7 @@ INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_2> in Unit <Snake> is equivalent to 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_7> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/Colour_4> <VGAWrp/Colour_3> 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_3> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_4> <VGAWrp/VGACtl/COUT_7> 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_0> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_1> <VGAWrp/VGACtl/COUT_2> 
-Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 15.
+Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 19.
 
 Final Macro Processing ...
 
@@ -640,8 +680,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 240
- Flip-Flops                                            : 240
+# Registers                                            : 292
+ Flip-Flops                                            : 292
 
 =========================================================================
 
@@ -670,31 +710,32 @@ Design Statistics
 # IOs                              : 44
 
 Cell Usage :
-# BELS                             : 1050
+# BELS                             : 1361
 #      GND                         : 1
 #      INV                         : 9
 #      LUT1                        : 29
-#      LUT2                        : 435
-#      LUT2_D                      : 3
-#      LUT2_L                      : 2
-#      LUT3                        : 56
-#      LUT3_D                      : 3
-#      LUT3_L                      : 3
-#      LUT4                        : 96
-#      LUT4_D                      : 12
-#      LUT4_L                      : 17
-#      MUXCY                       : 340
-#      MUXF5                       : 7
+#      LUT2                        : 420
+#      LUT2_D                      : 4
+#      LUT2_L                      : 3
+#      LUT3                        : 65
+#      LUT3_D                      : 2
+#      LUT3_L                      : 2
+#      LUT4                        : 292
+#      LUT4_D                      : 15
+#      LUT4_L                      : 13
+#      MUXCY                       : 452
+#      MUXF5                       : 17
 #      VCC                         : 1
 #      XORCY                       : 36
-# FlipFlops/Latches                : 240
-#      FD                          : 1
+# FlipFlops/Latches                : 292
+#      FD                          : 172
 #      FDC                         : 19
 #      FDCE                        : 7
-#      FDE                         : 156
+#      FDE                         : 26
 #      FDPE                        : 6
 #      FDR                         : 50
 #      FDRS                        : 1
+#      FDS                         : 11
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
@@ -708,9 +749,9 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-4 
 
- Number of Slices:                      362  out of   2448    14%  
- Number of Slice Flip Flops:            240  out of   4896     4%  
- Number of 4 input LUTs:                665  out of   4896    13%  
+ Number of Slices:                      468  out of   2448    19%  
+ Number of Slice Flip Flops:            292  out of   4896     5%  
+ Number of 4 input LUTs:                854  out of   4896    17%  
  Number of IOs:                          44
  Number of bonded IOBs:                  36  out of     92    39%  
  Number of GCLKs:                         3  out of     24    12%  
@@ -739,7 +780,7 @@ Clock Signal                       | Clock buffer(FF name)         | Load  |
 CLOCK                              | BUFGP                         | 53    |
 VS_OBUF(VGAWrp/VGACtl/VS10:O)      | NONE(*)(GameSpeed/TRIGG_OUT)  | 9     |
 SnakeCtl/REACHED_TARGET            | NONE(ScoreCnt/CURRENT_SCORE_0)| 4     |
-GameSpeed/TRIGG_OUT1               | BUFG                          | 131   |
+GameSpeed/TRIGG_OUT1               | BUFG                          | 183   |
 VGAWrp/CLK251                      | BUFG                          | 43    |
 -----------------------------------+-------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -759,8 +800,8 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 6.630ns (Maximum Frequency: 150.830MHz)
-   Minimum input arrival time before clock: 7.505ns
+   Minimum period: 6.643ns (Maximum Frequency: 150.534MHz)
+   Minimum input arrival time before clock: 4.095ns
    Maximum output required time after clock: 7.556ns
    Maximum combinational path delay: No path found
 
@@ -770,33 +811,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
-  Clock period: 5.590ns (frequency: 178.891MHz)
+  Clock period: 5.627ns (frequency: 177.715MHz)
   Total number of paths / destination ports: 477 / 86
 -------------------------------------------------------------------------
-Delay:               5.590ns (Levels of Logic = 9)
-  Source:            SnakeCtl/ApplePositionV_0 (FF)
+Delay:               5.627ns (Levels of Logic = 8)
+  Source:            SnakeCtl/ApplePositionV_1 (FF)
   Destination:       SnakeCtl/COLOUR_3 (FF)
   Source Clock:      CLOCK rising
   Destination Clock: CLOCK rising
 
-  Data Path: SnakeCtl/ApplePositionV_0 to SnakeCtl/COLOUR_3
+  Data Path: SnakeCtl/ApplePositionV_1 to SnakeCtl/COLOUR_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.591   0.610  SnakeCtl/ApplePositionV_0 (SnakeCtl/ApplePositionV_0)
-     LUT2:I1->O            1   0.704   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<0> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<0> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1>)
+     FDE:C->Q              3   0.591   0.706  SnakeCtl/ApplePositionV_1 (SnakeCtl/ApplePositionV_1)
+     LUT2:I0->O            1   0.704   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<1> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<1>)
      MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<2> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<2>)
      MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<3> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<3>)
      MUXCY:CI->O           1   0.059   0.000  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<4> (SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<4>)
      MUXCY:CI->O           3   0.459   0.706  SnakeCtl/Mcompar_COLOUR_cmp_le0001_cy<5> (SnakeCtl/COLOUR_cmp_le0001)
-     LUT2_L:I0->LO         1   0.704   0.104  SnakeCtl/COLOUR_and00001_SW0 (N103)
+     LUT2_L:I0->LO         1   0.704   0.104  SnakeCtl/COLOUR_and00001_SW0 (N70)
      LUT4:I3->O            1   0.704   0.000  SnakeCtl/COLOUR_mux0000<5>1 (SnakeCtl/COLOUR_mux0000<5>)
      FDE:D                     0.308          SnakeCtl/COLOUR_0
     ----------------------------------------
-    Total                      5.590ns (4.170ns logic, 1.420ns route)
-                                       (74.6% logic, 25.4% route)
+    Total                      5.627ns (4.111ns logic, 1.516ns route)
+                                       (73.1% logic, 26.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VS_OBUF'
@@ -823,10 +863,10 @@ Delay:               4.788ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SnakeCtl/REACHED_TARGET'
-  Clock period: 3.006ns (frequency: 332.668MHz)
+  Clock period: 3.178ns (frequency: 314.663MHz)
   Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
-Delay:               3.006ns (Levels of Logic = 1)
+Delay:               3.178ns (Levels of Logic = 1)
   Source:            ScoreCnt/CURRENT_SCORE_0 (FF)
   Destination:       ScoreCnt/CURRENT_SCORE_0 (FF)
   Source Clock:      SnakeCtl/REACHED_TARGET rising
@@ -836,19 +876,19 @@ Delay:               3.006ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.591   0.983  ScoreCnt/CURRENT_SCORE_0 (ScoreCnt/CURRENT_SCORE_0)
-     INV:I->O              1   0.704   0.420  ScoreCnt/Mcount_CURRENT_SCORE_xor<0>11_INV_0 (Result<0>1)
+     FDC:C->Q             21   0.591   1.128  ScoreCnt/CURRENT_SCORE_0 (ScoreCnt/CURRENT_SCORE_0)
+     INV:I->O              2   0.704   0.447  SnakeCtl/Madd_SNAKE_LEN_xor<0>11_INV_0 (LEDS_0_OBUF)
      FDC:D                     0.308          ScoreCnt/CURRENT_SCORE_0
     ----------------------------------------
-    Total                      3.006ns (1.603ns logic, 1.403ns route)
-                                       (53.3% logic, 46.7% route)
+    Total                      3.178ns (1.603ns logic, 1.575ns route)
+                                       (50.4% logic, 49.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GameSpeed/TRIGG_OUT1'
-  Clock period: 6.630ns (frequency: 150.830MHz)
-  Total number of paths / destination ports: 558 / 131
+  Clock period: 6.643ns (frequency: 150.534MHz)
+  Total number of paths / destination ports: 834 / 194
 -------------------------------------------------------------------------
-Delay:               6.630ns (Levels of Logic = 4)
+Delay:               6.643ns (Levels of Logic = 3)
   Source:            SnakeCtl/SnakePosition_3 (FF)
   Destination:       SnakeCtl/SnakePosition_6 (FF)
   Source Clock:      GameSpeed/TRIGG_OUT1 rising
@@ -858,15 +898,14 @@ Delay:               6.630ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             11   0.591   1.108  SnakeCtl/SnakePosition_3 (SnakeCtl/SnakePosition_3)
-     LUT4_D:I0->O          4   0.704   0.622  SnakeCtl/SnakePosition_0_mux0000312 (SnakeCtl/SnakePosition_0_mux0000312)
-     LUT4_D:I2->O          8   0.704   0.761  SnakeCtl/SnakePosition_1_mux000031 (SnakeCtl/N6)
-     LUT4:I3->O            1   0.704   0.424  SnakeCtl/SnakePosition_6_mux000029 (SnakeCtl/SnakePosition_6_mux000029)
-     LUT4:I3->O            1   0.704   0.000  SnakeCtl/SnakePosition_6_mux000070 (SnakeCtl/SnakePosition_6_mux0000)
-     FDE:D                     0.308          SnakeCtl/SnakePosition_6
+     FDS:C->Q             12   0.591   1.136  SnakeCtl/SnakePosition_3 (SnakeCtl/SnakePosition_3)
+     LUT4_D:I0->O          7   0.704   0.712  SnakeCtl/SnakePosition_6_cmp_gt00001_SW0 (SnakeCtl/Madd__add0000_cy<3>)
+     LUT4_D:I3->O          8   0.704   0.761  SnakeCtl/SnakePosition_0_mux000041 (SnakeCtl/N13)
+     LUT4:I3->O            1   0.704   0.420  SnakeCtl/SnakePosition_6_mux00002 (SnakeCtl/SnakePosition_6_mux00002)
+     FDS:S                     0.911          SnakeCtl/SnakePosition_6
     ----------------------------------------
-    Total                      6.630ns (3.715ns logic, 2.915ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      6.643ns (3.614ns logic, 3.029ns route)
+                                       (54.4% logic, 45.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGAWrp/CLK251'
@@ -914,29 +953,6 @@ Offset:              4.095ns (Levels of Logic = 3)
                                        (71.6% logic, 28.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GameSpeed/TRIGG_OUT1'
-  Total number of paths / destination ports: 157 / 131
--------------------------------------------------------------------------
-Offset:              7.505ns (Levels of Logic = 5)
-  Source:            RESET (PAD)
-  Destination:       SnakeCtl/SnakePosition_6 (FF)
-  Destination Clock: GameSpeed/TRIGG_OUT1 rising
-
-  Data Path: RESET to SnakeCtl/SnakePosition_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O           163   1.218   1.383  RESET_IBUF (RESET_IBUF)
-     LUT3:I1->O            1   0.704   0.595  SnakeCtl/SnakePosition_0_mux0000341_SW0 (N47)
-     LUT4_D:I0->O          8   0.704   0.761  SnakeCtl/SnakePosition_1_mux000031 (SnakeCtl/N6)
-     LUT4:I3->O            1   0.704   0.424  SnakeCtl/SnakePosition_6_mux000029 (SnakeCtl/SnakePosition_6_mux000029)
-     LUT4:I3->O            1   0.704   0.000  SnakeCtl/SnakePosition_6_mux000070 (SnakeCtl/SnakePosition_6_mux0000)
-     FDE:D                     0.308          SnakeCtl/SnakePosition_6
-    ----------------------------------------
-    Total                      7.505ns (4.342ns logic, 3.163ns route)
-                                       (57.9% logic, 42.1% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'VGAWrp/CLK251'
   Total number of paths / destination ports: 21 / 10
 -------------------------------------------------------------------------
@@ -959,35 +975,35 @@ Offset:              7.556ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SnakeCtl/REACHED_TARGET'
-  Total number of paths / destination ports: 28 / 7
+  Total number of paths / destination ports: 38 / 11
 -------------------------------------------------------------------------
-Offset:              6.123ns (Levels of Logic = 2)
+Offset:              6.568ns (Levels of Logic = 2)
   Source:            ScoreCnt/CURRENT_SCORE_1 (FF)
-  Destination:       HEX_OUT<6> (PAD)
+  Destination:       LEDS<3> (PAD)
   Source Clock:      SnakeCtl/REACHED_TARGET rising
 
-  Data Path: ScoreCnt/CURRENT_SCORE_1 to HEX_OUT<6>
+  Data Path: ScoreCnt/CURRENT_SCORE_1 to LEDS<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             12   0.591   1.136  ScoreCnt/CURRENT_SCORE_1 (ScoreCnt/CURRENT_SCORE_1)
-     LUT4:I0->O            1   0.704   0.420  Seg7Dec/Mrom_BIN_IN_rom000021 (HEX_OUT_2_OBUF)
-     OBUF:I->O                 3.272          HEX_OUT_2_OBUF (HEX_OUT<2>)
+     FDC:C->Q             20   0.591   1.181  ScoreCnt/CURRENT_SCORE_1 (ScoreCnt/CURRENT_SCORE_1)
+     LUT4:I1->O            9   0.704   0.820  SnakeCtl/Madd_SNAKE_LEN_xor<3>11 (LEDS_3_OBUF)
+     OBUF:I->O                 3.272          LEDS_3_OBUF (LEDS<3>)
     ----------------------------------------
-    Total                      6.123ns (4.567ns logic, 1.556ns route)
-                                       (74.6% logic, 25.4% route)
+    Total                      6.568ns (4.567ns logic, 2.001ns route)
+                                       (69.5% logic, 30.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.74 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.50 secs
  
 --> 
 
-Total memory usage is 232432 kilobytes
+Total memory usage is 233200 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 
