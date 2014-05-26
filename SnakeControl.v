@@ -88,22 +88,22 @@ always@(posedge GAMECLOCK) begin
 			end
 			2'b10: begin // the up direction
 				if(SnakePosition[12:7] == 0)
-					SnakePosition[12:7] <= 52;
+					SnakePosition[12:7] <= 59;
 				else
 					SnakePosition[12:7] <= SnakePosition[12:7] - 1; // Minus in V
 			end
 			2'b11: begin // the left state
 				if(SnakePosition[6:0] == 0)
-					SnakePosition[6:0] <= 72;
+					SnakePosition[6:0] <= 79;
 				else
 					SnakePosition[6:0] <= SnakePosition[6:0] - 1; // Minus in H
 			end
 			endcase
 			// prevent the snake from leaving the screen
-			if(SnakePosition[6:0] > 72)
-				SnakePosition[6:0] <= SnakePosition[6:0] - 72;
-			if(SnakePosition[12:7] > 52)
-				SnakePosition[12:7] <= SnakePosition[12:7] - 52;
+			if(SnakePosition[6:0] > 79)
+				SnakePosition[6:0] <= SnakePosition[6:0] - 79;
+			if(SnakePosition[12:7] > 59)
+				SnakePosition[12:7] <= SnakePosition[12:7] - 59;
 			// checking if we hit an apple
 			if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
 				REACHED_TARGET <= 1;

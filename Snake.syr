@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.17 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: Snake.prj
 
@@ -629,31 +629,29 @@ Design Statistics
 # IOs                              : 44
 
 Cell Usage :
-# BELS                             : 437
+# BELS                             : 404
 #      GND                         : 1
 #      INV                         : 10
 #      LUT1                        : 29
-#      LUT2                        : 87
-#      LUT2_D                      : 1
-#      LUT2_L                      : 1
-#      LUT3                        : 33
+#      LUT2                        : 88
+#      LUT3                        : 35
 #      LUT3_D                      : 3
-#      LUT3_L                      : 6
-#      LUT4                        : 100
-#      LUT4_D                      : 12
-#      LUT4_L                      : 15
+#      LUT3_L                      : 4
+#      LUT4                        : 74
+#      LUT4_D                      : 13
+#      LUT4_L                      : 12
 #      MUXCY                       : 88
-#      MUXF5                       : 14
+#      MUXF5                       : 10
 #      VCC                         : 1
 #      XORCY                       : 36
 # FlipFlops/Latches                : 122
-#      FD                          : 6
+#      FD                          : 8
 #      FDC                         : 19
 #      FDCE                        : 7
 #      FDE                         : 10
 #      FDPE                        : 6
-#      FDR                         : 61
-#      FDRS                        : 10
+#      FDR                         : 62
+#      FDRS                        : 7
 #      FDS                         : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -667,9 +665,9 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-4 
 
- Number of Slices:                      159  out of   2448     6%  
+ Number of Slices:                      144  out of   2448     5%  
  Number of Slice Flip Flops:            122  out of   4896     2%  
- Number of 4 input LUTs:                297  out of   4896     6%  
+ Number of 4 input LUTs:                268  out of   4896     5%  
  Number of IOs:                          44
  Number of bonded IOBs:                  36  out of     92    39%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -717,7 +715,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 6.984ns (Maximum Frequency: 143.184MHz)
+   Minimum period: 6.538ns (Maximum Frequency: 152.952MHz)
    Minimum input arrival time before clock: 4.165ns
    Maximum output required time after clock: 7.556ns
    Maximum combinational path delay: No path found
@@ -728,27 +726,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
-  Clock period: 6.628ns (frequency: 150.875MHz)
-  Total number of paths / destination ports: 1449 / 164
+  Clock period: 6.538ns (frequency: 152.952MHz)
+  Total number of paths / destination ports: 1449 / 163
 -------------------------------------------------------------------------
-Delay:               6.628ns (Levels of Logic = 3)
+Delay:               6.538ns (Levels of Logic = 3)
   Source:            VGAWrp/VGACtl/CountVer/Counter_0 (FF)
-  Destination:       VGAWrp/VGACtl/COUT_0 (FF)
+  Destination:       VGAWrp/VGACtl/ADDRH_0 (FF)
   Source Clock:      CLOCK rising
   Destination Clock: CLOCK rising
 
-  Data Path: VGAWrp/VGACtl/CountVer/Counter_0 to VGAWrp/VGACtl/COUT_0
+  Data Path: VGAWrp/VGACtl/CountVer/Counter_0 to VGAWrp/VGACtl/ADDRH_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              4   0.591   0.762  VGAWrp/VGACtl/CountVer/Counter_0 (VGAWrp/VGACtl/CountVer/Counter_0)
      LUT3:I0->O            1   0.704   0.455  VGAWrp/VGACtl/ADDRH_not000187 (VGAWrp/VGACtl/ADDRH_not000187)
-     LUT4:I2->O            1   0.704   0.595  VGAWrp/VGACtl/ADDRH_not000193 (VGAWrp/VGACtl/ADDRH_not000193)
-     LUT3:I0->O           23   0.704   1.202  VGAWrp/VGACtl/ADDRH_not0001115 (VGAWrp/VGACtl/ADDRH_not0001)
-     FDR:R                     0.911          VGAWrp/VGACtl/COUT_0
+     LUT4:I2->O            2   0.704   0.622  VGAWrp/VGACtl/ADDRH_not000193 (VGAWrp/VGACtl/ADDRH_not000193)
+     LUT3:I0->O           19   0.704   1.085  VGAWrp/VGACtl/ADDRH_not0001115 (VGAWrp/VGACtl/ADDRH_not0001)
+     FDR:R                     0.911          VGAWrp/VGACtl/ADDRH_0
     ----------------------------------------
-    Total                      6.628ns (3.614ns logic, 3.014ns route)
-                                       (54.5% logic, 45.5% route)
+    Total                      6.538ns (3.614ns logic, 2.924ns route)
+                                       (55.3% logic, 44.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VS_OBUF'
@@ -797,29 +795,27 @@ Delay:               3.006ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GameSpeed/TRIGG_OUT'
-  Clock period: 6.984ns (frequency: 143.184MHz)
-  Total number of paths / destination ports: 516 / 23
+  Clock period: 6.019ns (frequency: 166.141MHz)
+  Total number of paths / destination ports: 226 / 20
 -------------------------------------------------------------------------
-Delay:               6.984ns (Levels of Logic = 5)
-  Source:            SnakeCtl/SnakePosition_3 (FF)
+Delay:               6.019ns (Levels of Logic = 3)
+  Source:            SnakeCtl/SnakePosition_5 (FF)
   Destination:       SnakeCtl/SnakePosition_3 (FF)
   Source Clock:      GameSpeed/TRIGG_OUT rising
   Destination Clock: GameSpeed/TRIGG_OUT rising
 
-  Data Path: SnakeCtl/SnakePosition_3 to SnakeCtl/SnakePosition_3
+  Data Path: SnakeCtl/SnakePosition_5 to SnakeCtl/SnakePosition_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q            14   0.591   1.175  SnakeCtl/SnakePosition_3 (SnakeCtl/SnakePosition_3)
-     LUT4:I0->O            5   0.704   0.637  SnakeCtl/SnakePosition_6_cmp_gt00001_SW0 (N47)
-     LUT4:I3->O            7   0.704   0.712  SnakeCtl/SnakePosition_6_cmp_gt00001 (SnakeCtl/SnakePosition_6_cmp_gt0000)
-     LUT4:I3->O            1   0.704   0.424  SnakeCtl/SnakePosition_3_mux00007 (SnakeCtl/SnakePosition_3_mux00007)
-     LUT4:I3->O            1   0.704   0.000  SnakeCtl/SnakePosition_3_mux0000741_F (N139)
-     MUXF5:I0->O           1   0.321   0.000  SnakeCtl/SnakePosition_3_mux0000741 (SnakeCtl/SnakePosition_3_mux000074)
-     FDRS:D                    0.308          SnakeCtl/SnakePosition_3
+     FDRS:C->Q            10   0.591   1.057  SnakeCtl/SnakePosition_5 (SnakeCtl/SnakePosition_5)
+     LUT3_D:I0->O          9   0.704   0.824  SnakeCtl/SnakePosition_3_mux0000311 (SnakeCtl/N49)
+     LUT4_L:I3->LO         1   0.704   0.104  SnakeCtl/SnakePosition_3_mux0000611 (SnakeCtl/SnakePosition_3_mux000061)
+     LUT4:I3->O            1   0.704   0.420  SnakeCtl/SnakePosition_3_mux000081 (SnakeCtl/SnakePosition_3_mux000081)
+     FDRS:S                    0.911          SnakeCtl/SnakePosition_3
     ----------------------------------------
-    Total                      6.984ns (4.036ns logic, 2.948ns route)
-                                       (57.8% logic, 42.2% route)
+    Total                      6.019ns (3.614ns logic, 2.405ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
@@ -887,20 +883,20 @@ Offset:              7.556ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GameSpeed/TRIGG_OUT'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              5.115ns (Levels of Logic = 1)
-  Source:            SnakeCtl/SnakePosition_10 (FF)
-  Destination:       LEDS<3> (PAD)
+Offset:              4.897ns (Levels of Logic = 1)
+  Source:            SnakeCtl/SnakePosition_9 (FF)
+  Destination:       LEDS<2> (PAD)
   Source Clock:      GameSpeed/TRIGG_OUT rising
 
-  Data Path: SnakeCtl/SnakePosition_10 to LEDS<3>
+  Data Path: SnakeCtl/SnakePosition_9 to LEDS<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q            24   0.591   1.252  SnakeCtl/SnakePosition_10 (SnakeCtl/SnakePosition_10)
-     OBUF:I->O                 3.272          LEDS_3_OBUF (LEDS<3>)
+     FDRS:C->Q            16   0.591   1.034  SnakeCtl/SnakePosition_9 (SnakeCtl/SnakePosition_9)
+     OBUF:I->O                 3.272          LEDS_2_OBUF (LEDS<2>)
     ----------------------------------------
-    Total                      5.115ns (3.863ns logic, 1.252ns route)
-                                       (75.5% logic, 24.5% route)
+    Total                      4.897ns (3.863ns logic, 1.034ns route)
+                                       (78.9% logic, 21.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SnakeCtl/REACHED_TARGET'
@@ -926,11 +922,11 @@ Offset:              6.123ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.36 secs
+Total CPU time to Xst completion: 6.13 secs
  
 --> 
 
-Total memory usage is 227312 kilobytes
+Total memory usage is 226928 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   16 (   0 filtered)
