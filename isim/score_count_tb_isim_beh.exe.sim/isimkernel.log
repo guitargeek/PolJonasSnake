@@ -2,14 +2,14 @@ Command line:
    score_count_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  65362
+     -socket  50042
 
-Mon May 26 14:48:31 2014
+Mon May 26 16:43:58 2014
 
 
- Elaboration Time: 0.093601 sec
+ Elaboration Time: 0.078001 sec
 
- Current Memory Usage: 839.848 Meg
+ Current Memory Usage: 839.782 Meg
 
  Total Signals          : 17
  Total Nets             : 20
@@ -22,7 +22,7 @@ Mon May 26 14:48:31 2014
 
  Total Simulation Time: 0.187202 sec
 
- Current Memory Usage: 839.848 Meg
+ Current Memory Usage: 839.782 Meg
 
-Mon May 26 14:48:58 2014
+Mon May 26 16:44:21 2014
 

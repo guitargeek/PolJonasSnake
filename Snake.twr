@@ -44,11 +44,11 @@ Setup/Hold to clock CLOCK
                |Max Setup to|Max Hold to |                  | Clock  |
 Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------+------------+------------+------------------+--------+
-PUSH_BUTTONS<0>|    2.338(R)|   -0.059(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<1>|    2.754(R)|   -0.343(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<2>|    2.630(R)|   -0.781(R)|CLOCK_BUFGP       |   0.000|
-PUSH_BUTTONS<3>|    2.681(R)|   -0.300(R)|CLOCK_BUFGP       |   0.000|
-RESET          |    2.919(R)|   -0.433(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<0>|    4.205(R)|   -0.079(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<1>|    3.892(R)|   -0.184(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<2>|    4.178(R)|   -0.268(R)|CLOCK_BUFGP       |   0.000|
+PUSH_BUTTONS<3>|    3.615(R)|    0.192(R)|CLOCK_BUFGP       |   0.000|
+RESET          |    2.949(R)|   -0.853(R)|CLOCK_BUFGP       |   0.000|
 ---------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLOCK
@@ -56,18 +56,18 @@ Clock to Setup on destination clock CLOCK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |    5.381|         |         |         |
+CLOCK          |    5.052|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon May 26 15:26:49 2014 
+Analysis completed Mon May 26 17:05:42 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 135 MB
+Peak Memory Usage: 137 MB
 
 
 

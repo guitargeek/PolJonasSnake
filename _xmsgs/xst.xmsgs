@@ -43,12 +43,6 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">StrobeCounter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">COLOUR_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SnakeCtl</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;COLOUR_4&gt; &lt;COLOUR_5&gt; &lt;COLOUR_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">COLOUR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SnakeCtl</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;COLOUR_1&gt; &lt;COLOUR_2&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">COLOUR_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SnakeControl</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;COLOUR_4&gt; &lt;COLOUR_5&gt; &lt;COLOUR_7&gt; </arg>
 </msg>
 
