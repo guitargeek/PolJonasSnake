@@ -58,8 +58,8 @@ module VGAControl(
 					.CLK(CLK),
 					.RESET(1'b0),
 					.ENABLE_IN(HorTrigOut),
-					.COUNT(VerCount),
-					.TRIGG_OUT(VerTrigOut) );
+					.COUNT(VerCount)
+				   );
 					
 	assign HS = (HorCount < HorzTimeToPulseWidthEnd) ? 0 : 1;
 	assign VS = (VerCount < VertTimeToPulseWidthEnd) ? 0 : 1;

@@ -9,22 +9,22 @@ Target Device  : xc3s250e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 27 18:08:24 2014
+Mapped Date    : Tue May 27 19:23:40 2014
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:           305 out of   4,896    6%
-  Number of 4 input LUTs:               876 out of   4,896   17%
+  Number of Slice Flip Flops:           307 out of   4,896    6%
+  Number of 4 input LUTs:               878 out of   4,896   17%
 Logic Distribution:
-  Number of occupied Slices:            482 out of   2,448   19%
-    Number of Slices containing only related logic:     482 out of     482 100%
-    Number of Slices containing unrelated logic:          0 out of     482   0%
+  Number of occupied Slices:            483 out of   2,448   19%
+    Number of Slices containing only related logic:     483 out of     483 100%
+    Number of Slices containing unrelated logic:          0 out of     483   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         905 out of   4,896   18%
-    Number used as logic:               876
+  Total Number of 4 input LUTs:         907 out of   4,896   18%
+    Number used as logic:               878
     Number used as a route-thru:         29
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -84,15 +84,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net VS_OBUF is sourced by a
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network SWITCHES<7> has no load.
-INFO:LIT:395 - The above info message is repeated 7 more times for the following
-   (max. 5 shown):
-   SWITCHES<6>,
-   SWITCHES<5>,
-   SWITCHES<4>,
-   SWITCHES<3>,
-   SWITCHES<2>
-   To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

@@ -22,7 +22,6 @@ module Snake(
     input [3:0] PUSH_BUTTONS,
     input CLOCK,
     input RESET,
-	 input [7:0] SWITCHES, // for debugging
     output [7:0] COLOUR_OUT,
     output HS,
     output VS,
@@ -34,26 +33,15 @@ module Snake(
 	// the wires for connecting the modules
 	wire [1:0] MasterState;
 	wire [1:0] NavState;
-	
 	wire [7:0] RandomAddrH;
-	wire [6:0] RandomAddrV;
-	
+	wire [6:0] RandomAddrV;	
 	wire [9:0] AddrH;
 	wire [8:0] AddrV;
-	
 	wire [7:0] Colour;
-
-	wire ReachedTarget;
-	
-	wire [1:0] StrobeCounter;
-	
+	wire ReachedTarget;		
 	wire [3:0] Score; // the score we get from the score counter
-	wire [3:0] StrobedScore;
-	
-//	assign LEDS = RandomAddrH;
-	
-	assign StrobedScore = Score;
-	
+	wire Gameclock;	
+		
 	// initialize the modules
 	MasterStateMachine MasterSTM (
 					.RESET(RESET),
@@ -78,8 +66,7 @@ module Snake(
 					.HORIZONTAL(RandomAddrH),
 					.VERTICAL(RandomAddrV)
 					);
-
-wire Gameclock;					
+					
 // Change this to adjust the snake's speed	
 GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(5))
 GameSpeed(
@@ -101,8 +88,6 @@ GameSpeed(
 					.RAND_ADDRH(RandomAddrH),
 					.RAND_ADDRV(RandomAddrV),
 					.DEBUG_OUT(LEDS),
-					.DEBUG_IN(SWITCHES),
-					.RESET(RESET),
 					.SCORE(Score)
 					);
 
@@ -118,24 +103,15 @@ GameSpeed(
 					);
 					
   ScoreCounter ScoreCnt(
-					.CLK(CLOCK),
 					.RESET(RESET),
 					.REACHED_TARGET(ReachedTarget),
-//					.REACHED_TARGET(PUSH_BUTTONS[0]),
 					.CURRENT_SCORE(Score)
 					);
-					
-//  ScoreDecimalMultiplexer Mux(
-//					.CLK(CLOCK),
-//					.CURRENT_SCORE(Score),
-//					.STROBE_COUNTER(StrobeCounter),
-//					.STROBED_SCORE(StrobedScore)
-//					);
 
  Seg7Decoder Seg7Dec(
 					.SEG_SELECT_IN(0),
 					.SEG_SELECT_OUT(SEG_SELECT),
-					.BIN_IN(StrobedScore),
+					.BIN_IN(Score),
 					.HEX_OUT(HEX_OUT),
 					.DOT_IN(0)
     );

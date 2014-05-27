@@ -22,7 +22,7 @@ module PRandomHorz(
         input CLK,
         input RESET,
         input CE,
-        output reg LFSR_DONE,
+//        output reg LFSR_DONE,
 		  output [7:0] OUT);
 
 reg [7:0] lfsr;
@@ -35,12 +35,12 @@ assign lfsr_equal = (lfsr == 8'h2D);
 always @(posedge CLK,posedge RESET) begin
     if(RESET) begin
         lfsr <= 0;
-        LFSR_DONE <= 0;
+//        LFSR_DONE <= 0;
     end
     else begin
         if(CE)
             lfsr <= lfsr_equal ? 8'h0 : {lfsr[6:0],d0};
-        LFSR_DONE <= lfsr_equal;
+//        LFSR_DONE <= lfsr_equal;
     end
 end
 endmodule

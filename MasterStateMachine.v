@@ -42,7 +42,7 @@ always@(posedge CLOCK) begin
 end
 
 // asynchronous logic
-always@(PUSH_BUTTONS or SCORE_IN) begin
+always@(PUSH_BUTTONS or SCORE_IN or CurrState) begin
 	case(CurrState)
 		2'b00: begin // in idle state
 			if(PUSH_BUTTONS)

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: Snake.prj
@@ -188,13 +188,9 @@ Analyzing top module <Snake>.
 Module <Snake> is correct for synthesis.
  
 Analyzing module <MasterStateMachine> in library <work>.
-WARNING:Xst:905 - "MasterStateMachine.v" line 45: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <CurrState>
 Module <MasterStateMachine> is correct for synthesis.
  
 Analyzing module <NavigationStateMachine> in library <work>.
-WARNING:Xst:905 - "NavigationStateMachine.v" line 45: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <CurrState>
 Module <NavigationStateMachine> is correct for synthesis.
  
 Analyzing module <RandomWrapper> in library <work>.
@@ -304,100 +300,96 @@ Unit <GenericCounter_1> synthesized.
 
 Synthesizing Unit <SnakeControl>.
     Related source file is "SnakeControl.v".
-WARNING:Xst:647 - Input <RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <DEBUG_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <RAND_ADDRH<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <REACHED_TARGET>.
     Found 8-bit register for signal <COLOUR>.
-    Found 7-bit adder for signal <$add0000> created at line 180.
-    Found 6-bit adder for signal <$add0001> created at line 183.
-    Found 6-bit subtractor for signal <$sub0000> created at line 189.
-    Found 7-bit subtractor for signal <$sub0001> created at line 195.
+    Found 7-bit adder for signal <$add0000> created at line 175.
+    Found 6-bit adder for signal <$add0001> created at line 178.
+    Found 6-bit subtractor for signal <$sub0000> created at line 184.
+    Found 7-bit subtractor for signal <$sub0001> created at line 190.
     Found 7-bit register for signal <ApplePositionH>.
-    Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 72.
+    Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 67.
     Found 6-bit register for signal <ApplePositionV>.
-    Found 9-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 76.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0000> created at line 81.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0001> created at line 81.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0002> created at line 85.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0003> created at line 85.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0004> created at line 90.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0005> created at line 90.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0006> created at line 90.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0007> created at line 93.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0008> created at line 93.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0009> created at line 93.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0010> created at line 96.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0011> created at line 96.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0012> created at line 96.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0013> created at line 99.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0014> created at line 99.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0015> created at line 99.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0016> created at line 102.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0017> created at line 102.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0018> created at line 102.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0019> created at line 105.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0020> created at line 105.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0021> created at line 105.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0022> created at line 108.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0023> created at line 108.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0024> created at line 108.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0025> created at line 111.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0026> created at line 111.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0027> created at line 111.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0028> created at line 114.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0029> created at line 114.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0030> created at line 114.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0031> created at line 117.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0032> created at line 117.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0033> created at line 117.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0034> created at line 120.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0035> created at line 120.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0036> created at line 120.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0037> created at line 123.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0038> created at line 123.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0039> created at line 123.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0040> created at line 126.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0041> created at line 126.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0042> created at line 126.
-    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0043> created at line 129.
-    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0044> created at line 129.
-    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0045> created at line 129.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0000> created at line 81.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0001> created at line 81.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0002> created at line 85.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0003> created at line 85.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0004> created at line 90.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0005> created at line 90.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0006> created at line 93.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0007> created at line 93.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0008> created at line 96.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0009> created at line 96.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0010> created at line 99.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0011> created at line 99.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0012> created at line 102.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0013> created at line 102.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0014> created at line 105.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0015> created at line 105.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0016> created at line 108.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0017> created at line 108.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0018> created at line 111.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0019> created at line 111.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0020> created at line 114.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0021> created at line 114.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0022> created at line 117.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0023> created at line 117.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0024> created at line 120.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0025> created at line 120.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0026> created at line 123.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0027> created at line 123.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0028> created at line 126.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0029> created at line 126.
-    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0030> created at line 129.
-    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0031> created at line 129.
-    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 136.
-    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 136.
+    Found 9-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 71.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0000> created at line 76.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0001> created at line 76.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0002> created at line 80.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0003> created at line 80.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0004> created at line 85.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0005> created at line 85.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0006> created at line 85.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0007> created at line 88.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0008> created at line 88.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0009> created at line 88.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0010> created at line 91.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0011> created at line 91.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0012> created at line 91.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0013> created at line 94.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0014> created at line 94.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0015> created at line 94.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0016> created at line 97.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0017> created at line 97.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0018> created at line 97.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0019> created at line 100.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0020> created at line 100.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0021> created at line 100.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0022> created at line 103.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0023> created at line 103.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0024> created at line 103.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0025> created at line 106.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0026> created at line 106.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0027> created at line 106.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0028> created at line 109.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0029> created at line 109.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0030> created at line 109.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0031> created at line 112.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0032> created at line 112.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0033> created at line 112.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0034> created at line 115.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0035> created at line 115.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0036> created at line 115.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0037> created at line 118.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0038> created at line 118.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0039> created at line 118.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0040> created at line 121.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0041> created at line 121.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0042> created at line 121.
+    Found 4-bit comparator greater for signal <COLOUR$cmp_gt0043> created at line 124.
+    Found 10-bit comparator greater for signal <COLOUR$cmp_gt0044> created at line 124.
+    Found 9-bit comparator greater for signal <COLOUR$cmp_gt0045> created at line 124.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0000> created at line 76.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0001> created at line 76.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0002> created at line 80.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0003> created at line 80.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0004> created at line 85.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0005> created at line 85.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0006> created at line 88.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0007> created at line 88.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0008> created at line 91.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0009> created at line 91.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0010> created at line 94.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0011> created at line 94.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0012> created at line 97.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0013> created at line 97.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0014> created at line 100.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0015> created at line 100.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0016> created at line 103.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0017> created at line 103.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0018> created at line 106.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0019> created at line 106.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0020> created at line 109.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0021> created at line 109.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0022> created at line 112.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0023> created at line 112.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0024> created at line 115.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0025> created at line 115.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0026> created at line 118.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0027> created at line 118.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0028> created at line 121.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0029> created at line 121.
+    Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0030> created at line 124.
+    Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0031> created at line 124.
+    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 131.
+    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 131.
     Found 4-bit adder for signal <SNAKE_LEN>.
     Found 13-bit register for signal <SnakePosition>.
     Found 13-bit register for signal <SnakePosition1>.
@@ -414,8 +406,8 @@ WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserv
     Found 13-bit register for signal <SnakePosition7>.
     Found 13-bit register for signal <SnakePosition8>.
     Found 13-bit register for signal <SnakePosition9>.
-    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 201.
-    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 199.
+    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 196.
+    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 194.
     Summary:
 	inferred 217 D-type flip-flop(s).
 	inferred   5 Adder/Subtractor(s).
@@ -425,7 +417,6 @@ Unit <SnakeControl> synthesized.
 
 Synthesizing Unit <ScoreCounter>.
     Related source file is "ScoreCounter.v".
-WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit up counter for signal <CURRENT_SCORE>.
     Summary:
 	inferred   1 Counter(s).
@@ -442,22 +433,20 @@ Unit <Seg7Decoder> synthesized.
 
 Synthesizing Unit <PRandomHorz>.
     Related source file is "PRandomHorz.v".
-    Found 1-bit register for signal <LFSR_DONE>.
     Found 1-bit xor4 for signal <d0$xor0000>.
     Found 8-bit register for signal <lfsr>.
     Summary:
-	inferred   9 D-type flip-flop(s).
+	inferred   8 D-type flip-flop(s).
 	inferred   1 Xor(s).
 Unit <PRandomHorz> synthesized.
 
 
 Synthesizing Unit <PRandomVert>.
     Related source file is "PRandomVert.v".
-    Found 1-bit register for signal <LFSR_DONE>.
     Found 1-bit xor2 for signal <d0$xor0000>.
     Found 7-bit register for signal <lfsr>.
     Summary:
-	inferred   8 D-type flip-flop(s).
+	inferred   7 D-type flip-flop(s).
 Unit <PRandomVert> synthesized.
 
 
@@ -492,7 +481,6 @@ Unit <RandomWrapper> synthesized.
 
 Synthesizing Unit <VGAControl>.
     Related source file is "VGAControl.v".
-WARNING:Xst:646 - Signal <VerTrigOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8-bit register for signal <COUT>.
     Found 10-bit register for signal <ADDRH>.
     Found 9-bit register for signal <ADDRV>.
@@ -524,7 +512,6 @@ Unit <VGAWrapper> synthesized.
 
 Synthesizing Unit <Snake>.
     Related source file is "Snake.v".
-WARNING:Xst:1780 - Signal <StrobeCounter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <Snake> synthesized.
 
 
@@ -547,8 +534,8 @@ Macro Statistics
  4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 44
- 1-bit register                                        : 19
+# Registers                                            : 42
+ 1-bit register                                        : 17
  10-bit register                                       : 1
  13-bit register                                       : 14
  6-bit register                                        : 1
@@ -624,8 +611,8 @@ Macro Statistics
  4-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 287
- Flip-Flops                                            : 287
+# Registers                                            : 285
+ Flip-Flops                                            : 285
 # Comparators                                          : 92
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 16
@@ -669,10 +656,6 @@ Optimizing unit <RandomWrapper> ...
 Optimizing unit <VGAControl> ...
 
 Optimizing unit <VGAWrapper> ...
-WARNING:Xst:2677 - Node <RNDMWrp/PRVert/LFSR_DONE> of sequential type is unconnected in block <Snake>.
-WARNING:Xst:2677 - Node <RNDMWrp/PRHorz/LFSR_DONE> of sequential type is unconnected in block <Snake>.
-WARNING:Xst:2677 - Node <RNDMWrp/horz_0> of sequential type is unconnected in block <Snake>.
-WARNING:Xst:2677 - Node <RNDMWrp/vert_0> of sequential type is unconnected in block <Snake>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -680,7 +663,7 @@ INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_2> in Unit <Snake> is equivalent to 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/Colour_7> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/Colour_4> <VGAWrp/Colour_3> 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_3> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_4> <VGAWrp/VGACtl/COUT_7> 
 INFO:Xst:2261 - The FF/Latch <VGAWrp/VGACtl/COUT_0> in Unit <Snake> is equivalent to the following 2 FFs/Latches, which will be removed : <VGAWrp/VGACtl/COUT_1> <VGAWrp/VGACtl/COUT_2> 
-Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 20.
+Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 21.
 
 Final Macro Processing ...
 
@@ -688,8 +671,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 305
- Flip-Flops                                            : 305
+# Registers                                            : 307
+ Flip-Flops                                            : 307
 
 =========================================================================
 
@@ -715,14 +698,14 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 44
+# IOs                              : 36
 
 Cell Usage :
-# BELS                             : 1433
+# BELS                             : 1435
 #      GND                         : 1
 #      INV                         : 9
 #      LUT1                        : 29
-#      LUT2                        : 447
+#      LUT2                        : 449
 #      LUT2_D                      : 4
 #      LUT2_L                      : 3
 #      LUT3                        : 66
@@ -735,10 +718,10 @@ Cell Usage :
 #      MUXF5                       : 15
 #      VCC                         : 1
 #      XORCY                       : 36
-# FlipFlops/Latches                : 305
+# FlipFlops/Latches                : 307
 #      FD                          : 185
 #      FDC                         : 19
-#      FDCE                        : 7
+#      FDCE                        : 9
 #      FDE                         : 26
 #      FDPE                        : 6
 #      FDR                         : 50
@@ -757,10 +740,10 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-4 
 
- Number of Slices:                      491  out of   2448    20%  
- Number of Slice Flip Flops:            305  out of   4896     6%  
- Number of 4 input LUTs:                900  out of   4896    18%  
- Number of IOs:                          44
+ Number of Slices:                      492  out of   2448    20%  
+ Number of Slice Flip Flops:            307  out of   4896     6%  
+ Number of 4 input LUTs:                902  out of   4896    18%  
+ Number of IOs:                          36
  Number of bonded IOBs:                  36  out of     92    39%  
  Number of GCLKs:                         3  out of     24    12%  
 
@@ -785,7 +768,7 @@ Clock Information:
 -----------------------------------+-------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
-CLOCK                              | BUFGP                         | 54    |
+CLOCK                              | BUFGP                         | 56    |
 VS_OBUF(VGAWrp/VGACtl/VS10:O)      | NONE(*)(GameSpeed/TRIGG_OUT)  | 9     |
 SnakeCtl/REACHED_TARGET            | NONE(ScoreCnt/CURRENT_SCORE_0)| 4     |
 GameSpeed/TRIGG_OUT1               | BUFG                          | 195   |
@@ -801,7 +784,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RESET                              | IBUF                   | 32    |
+RESET                              | IBUF                   | 34    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -820,7 +803,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
   Clock period: 5.627ns (frequency: 177.715MHz)
-  Total number of paths / destination ports: 499 / 88
+  Total number of paths / destination ports: 521 / 92
 -------------------------------------------------------------------------
 Delay:               5.627ns (Levels of Logic = 8)
   Source:            SnakeCtl/ApplePositionV_1 (FF)
@@ -982,6 +965,25 @@ Offset:              7.556ns (Levels of Logic = 3)
                                        (69.8% logic, 30.2% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            RNDMWrp/horz_0 (FF)
+  Destination:       LEDS<7> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: RNDMWrp/horz_0 to LEDS<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  RNDMWrp/horz_0 (RNDMWrp/horz_0)
+     OBUF:I->O                 3.272          LEDS_7_OBUF (LEDS<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SnakeCtl/REACHED_TARGET'
   Total number of paths / destination ports: 38 / 11
 -------------------------------------------------------------------------
@@ -1005,14 +1007,14 @@ Offset:              6.664ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.06 secs
+Total CPU time to Xst completion: 13.00 secs
  
 --> 
 
 
-Total memory usage is 177404 kilobytes
+Total memory usage is 177384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

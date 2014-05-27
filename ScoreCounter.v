@@ -19,29 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ScoreCounter(
-		input CLK,
 		input RESET,
 		input REACHED_TARGET,
-//		output reg [1:0] STROBE_COUNTER,
 		output reg [3:0] CURRENT_SCORE
     );
-
-/*reg [3:0] NextScore = 0;
-
-always@(posedge CLK) begin
-	if(RESET)
-		CURRENT_SCORE <= 0;
-	else 
-		CURRENT_SCORE <= NextScore;
-end
-
-always@(posedge REACHED_TARGET) begin
-	if(CURRENT_SCORE != 10)
-		NextScore <= CURRENT_SCORE + 1;
-	else
-	  NextScore <= CURRENT_SCORE;
-end*/
-
 	
 always@(posedge REACHED_TARGET or posedge RESET) begin
 	if(RESET) 

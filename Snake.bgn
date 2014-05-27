@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '3s250e.nph' in environment
    "Snake" is an NCD, version 3.2, device xc3s250e, package cp132, speed -4
 Opened constraints file Snake.pcf.
 
-Tue May 27 18:08:59 2014
+Tue May 27 19:24:18 2014
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No Snake.ncd 
 

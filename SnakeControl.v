@@ -20,10 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 module SnakeControl(
 	 input CLK,
-	 input RESET,
 	 input GAMECLOCK,
-     input [9:0] ADDRH,
-     input [8:0] ADDRV,
+    input [9:0] ADDRH,
+    input [8:0] ADDRV,
 	 output reg [7:0] COLOUR,
 	 output reg REACHED_TARGET,
 	 input [1:0] MASTER_STATE,
@@ -31,8 +30,7 @@ module SnakeControl(
 	 input [7:0] RAND_ADDRH,
 	 input [6:0] RAND_ADDRV,
 	 input [3:0] SCORE,
-	 output [7:0] DEBUG_OUT,
-	 input [7:0] DEBUG_IN
+	 output [7:0] DEBUG_OUT
     );
 	 
 	 
@@ -42,29 +40,26 @@ module SnakeControl(
 	 reg [6:0] ApplePositionH;
 	 reg [5:0] ApplePositionV;
 	 
-	 reg [12:0] SnakePosition = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition1 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition2 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition3 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition4 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition5 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition6 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition7 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition8 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition9 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition10 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition11 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition12 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition13 = {7'b0000000, 6'b000000};
-	 reg [12:0] SnakePosition14 = {7'b0000000, 6'b000000};
+	 reg [12:0] SnakePosition =   {7'b0010000, 6'b010000};
+	 reg [12:0] SnakePosition1 =  {7'b0010000, 6'b010001};
+	 reg [12:0] SnakePosition2 =  {7'b0010000, 6'b010010};
+	 reg [12:0] SnakePosition3 =  {7'b0010000, 6'b010011};
+	 reg [12:0] SnakePosition4 =  {7'b0010000, 6'b010100};
+	 reg [12:0] SnakePosition5 =  {7'b0010000, 6'b010101};
+	 reg [12:0] SnakePosition6 =  {7'b0010000, 6'b010110};
+	 reg [12:0] SnakePosition7 =  {7'b0010000, 6'b010111};
+	 reg [12:0] SnakePosition8 =  {7'b0010000, 6'b011000};
+	 reg [12:0] SnakePosition9 =  {7'b0010000, 6'b011001};
+	 reg [12:0] SnakePosition10 = {7'b0010000, 6'b011010};
+	 reg [12:0] SnakePosition11 = {7'b0010000, 6'b011011};
+	 reg [12:0] SnakePosition12 = {7'b0010000, 6'b011100};
+	 reg [12:0] SnakePosition13 = {7'b0010000, 6'b011101};
+	 reg [12:0] SnakePosition14 = {7'b0010000, 6'b011110};
 
 	 wire [3:0] SNAKE_LEN;
 	 assign SNAKE_LEN = SCORE +3'd5;
 	  
-	 //assign SnakePosition = {5'b00000, DEBUG_IN};
-	 //assign DEBUG_OUT = {2'b00, SnakePosition[12:7]};
-	 assign DEBUG_OUT = {4'b0000, SNAKE_LEN};
-		
+	 assign DEBUG_OUT = {RAND_ADDRH[0], RAND_ADDRV[0], 2'b00, SNAKE_LEN};	
 		
 	 always@(posedge CLK) begin
 	 if (MASTER_STATE == 1) begin

@@ -1,2 +1,5 @@
-.cmd_log
-.log
+*.cmd_log
+*.log
+xlnx_auto_0_xdb/
+xst/
+_ngo/
