@@ -112,6 +112,7 @@ GenericCounter  #(
 					
   ScoreCounter ScoreCnt(
 					.RESET(RESET),
+					.GAMECLOCK(Gameclock),
 					.REACHED_TARGET(ReachedTarget),
 					.CURRENT_SCORE(Score)
 					);

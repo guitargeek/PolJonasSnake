@@ -3,17 +3,15 @@ PolJonasSnake
 
 Snake Game for the Basys2 Board
 
-## Remember how to use git
+### Remember the commands for git
 
-git status
+1. git pull origin master
+2. git status
+3. git add *
+4. git commit -m "MESSAGE"
+5. git push origin master
 
-git add *
-git commit -m "MESSAGE"
-git push origin master
-
-git pull origin master
-
-## Notes
+### Notes
 
 ** 27/05/2104 - 22 Uhr **
 Jonas: das Spiel ist eigentlich fertig, allerdings Zaehlt der ScoreCounter immernoch manchmal mehrere Punkte auf einmal hoch. Das liegt glaube ich an den Apfel-Positionen, die sich mehrmals in einem Gameclock ändern können. Morgen werde ich in den ScoreCounter noch hardcoden, dass er nur einmal pro Gameclock hochzählen kann und dann wird abgegeben.
