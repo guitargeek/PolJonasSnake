@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/jonas/FPGA/PolJonasSnake/Snake.ncd
-OUTFILE=/home/jonas/FPGA/PolJonasSnake/Snake.bit
-FAMILY=Spartan3E
-PART=xc3s250e-4cp132
-WORKINGDIR=/home/jonas/FPGA/PolJonasSnake
-LICENSE=WebPack
-USER_INFO=201065467_209426030_0_551

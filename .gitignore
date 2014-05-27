@@ -45,3 +45,13 @@ _ngo/
 # and this is what I think should be ignored
 NavigationStateMachine_summary.html
 NavigationStateMachine_envsettings.html
+iseconfig/
+
+# ok I give up and do it the other way around
+*.*
+!*.v
+!*.ucf
+!*.xise
+!.gitignore
+!README.md
+!.git/
