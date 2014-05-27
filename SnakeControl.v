@@ -72,11 +72,11 @@ module SnakeControl(
 		if({RAND_ADDRH[7:1], 3'b111} <= 640)
 			ApplePositionH <= RAND_ADDRH[7:1];
 		else 
-			ApplePositionH <= 320;
-		if({RAND_ADDRH[7:1], 3'b111} <= 480)
+			ApplePositionH <= ~RAND_ADDRH[7:1];
+		if({RAND_ADDRV[6:1], 3'b111} <= 480)
 			ApplePositionV <= RAND_ADDRV[6:1];
 		else 
-			ApplePositionV <= 240;
+			ApplePositionV <= ~RAND_ADDRV[6:1];
 		// drawing the apple
 		if(ADDRH > {ApplePositionH, 3'b000} && ADDRV > {ApplePositionV, 3'b000}
 			&& ADDRH <= {ApplePositionH, 3'b111} &&  ADDRV <= {ApplePositionV, 3'b111})
@@ -131,6 +131,12 @@ module SnakeControl(
 			COLOUR <= 8'b11111111;
 		else
 			COLOUR <= 8'b01000000;
+			
+		// checking if we hit an apple
+		if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
+			REACHED_TARGET <= 1;
+		else
+			REACHED_TARGET <= 0;
 	end
 	end
 		
@@ -194,11 +200,6 @@ module SnakeControl(
 				SnakePosition[6:0] <= 0;
 			if(SnakePosition[12:7] > 58)
 				SnakePosition[12:7] <= 0;
-			// checking if we hit an apple
-			if(SnakePosition[6:0] == ApplePositionH && SnakePosition[12:7] == ApplePositionV)
-				REACHED_TARGET <= 1;
-			else
-				REACHED_TARGET <= 0;
 		end
 	 end
 	 

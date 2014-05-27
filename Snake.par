@@ -1,13 +1,13 @@
-Release 14.7 par P.20131013 (nt)
+Release 14.7 par P.20131013 (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ASUS-N55::  Mon May 26 18:11:08 2014
+linux-mswc.site::  Tue May 27 18:08:32 2014
 
 par -w -intstyle ise -ol high -t 1 Snake_map.ncd Snake.ncd Snake.pcf 
 
 
 Constraints file: Snake.pcf.
-Loading device for application Rf_Device from file '3s250e.nph' in environment d:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s250e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
    "Snake" is an NCD, version 3.2, device xc3s250e, package cp132, speed -4
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -52,49 +52,49 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 3 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:58d24ded) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:58d24ded) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:58d24ded) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:58d24ded) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:58d24ded) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:58d24ded) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:71f3a10d) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:71f3a10d) REAL time: 3 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:71f3a10d) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:71f3a10d) REAL time: 3 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:71f3a10d) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:71f3a10d) REAL time: 3 secs 
 
 Phase 7.8  Global Placement
-..........................
-......
-Phase 7.8  Global Placement (Checksum:586f698b) REAL time: 5 secs 
+..........................................
+........
+Phase 7.8  Global Placement (Checksum:94b19cdc) REAL time: 6 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:586f698b) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:94b19cdc) REAL time: 6 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:ce6f1d21) REAL time: 6 secs 
+Phase 9.18  Placement Optimization (Checksum:9772782c) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:ce6f1d21) REAL time: 6 secs 
+Phase 10.5  Local Placement Optimization (Checksum:9772782c) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 6 secs 
-Total CPU  time to Placer completion: 4 secs 
+Total REAL time to Placer completion: 7 secs 
+Total CPU  time to Placer completion: 6 secs 
 Writing design to file Snake.ncd
 
 
@@ -102,38 +102,38 @@ Writing design to file Snake.ncd
 Starting Router
 
 
-Phase  1  : 3091 unrouted;      REAL time: 8 secs 
+Phase  1  : 3097 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 2835 unrouted;      REAL time: 8 secs 
+Phase  2  : 2841 unrouted;      REAL time: 10 secs 
 
-Phase  3  : 577 unrouted;      REAL time: 8 secs 
+Phase  3  : 571 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 642 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  4  : 590 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: Snake.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
 WARNING:Route:455 - CLK Net:VS_OBUF may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:SnakeCtl/REACHED_TARGET may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 12 secs 
-Total CPU time to Router completion: 10 secs 
+Total REAL time to Router completion: 17 secs 
+Total CPU time to Router completion: 17 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -151,16 +151,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-| GameSpeed/TRIGG_OUT | BUFGMUX_X1Y10| No   |  111 |  0.047     |  0.116      |
+| GameSpeed/TRIGG_OUT | BUFGMUX_X1Y10| No   |  110 |  0.046     |  0.115      |
 +---------------------+--------------+------+------+------------+-------------+
 |        VGAWrp/CLK25 |  BUFGMUX_X1Y0| No   |   23 |  0.029     |  0.098      |
 +---------------------+--------------+------+------+------------+-------------+
-|         CLOCK_BUFGP | BUFGMUX_X2Y11| No   |   36 |  0.038     |  0.107      |
+|         CLOCK_BUFGP | BUFGMUX_X2Y11| No   |   37 |  0.038     |  0.107      |
 +---------------------+--------------+------+------+------------+-------------+
-|             VS_OBUF |         Local|      |    6 |  0.008     |  1.467      |
+|             VS_OBUF |         Local|      |    6 |  0.011     |  1.465      |
 +---------------------+--------------+------+------+------------+-------------+
 |SnakeCtl/REACHED_TAR |              |      |      |            |             |
-|                 GET |         Local|      |    3 |  0.000     |  1.547      |
+|                 GET |         Local|      |    3 |  0.002     |  1.575      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -180,20 +180,20 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Gam | SETUP       |         N/A|     6.216ns|     N/A|           0
+  Autotimespec constraint for clock net Gam | SETUP       |         N/A|     6.317ns|     N/A|           0
   eSpeed/TRIGG_OUT                          | HOLD        |     1.317ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net VS_ | SETUP       |         N/A|     4.460ns|     N/A|           0
-  OBUF                                      | HOLD        |     1.614ns|            |       0|           0
+  Autotimespec constraint for clock net VS_ | SETUP       |         N/A|     4.249ns|     N/A|           0
+  OBUF                                      | HOLD        |     1.691ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     6.769ns|     N/A|           0
-  Wrp/CLK25                                 | HOLD        |     1.067ns|            |       0|           0
+  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     6.581ns|     N/A|           0
+  Wrp/CLK25                                 | HOLD        |     1.259ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLO | SETUP       |         N/A|     5.003ns|     N/A|           0
-  CK_BUFGP                                  | HOLD        |     1.036ns|            |       0|           0
+  Autotimespec constraint for clock net CLO | SETUP       |         N/A|     5.246ns|     N/A|           0
+  CK_BUFGP                                  | HOLD        |     1.169ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Sna | SETUP       |         N/A|     2.246ns|     N/A|           0
-  keCtl/REACHED_TARGET                      | HOLD        |     1.438ns|            |       0|           0
+  Autotimespec constraint for clock net Sna | SETUP       |         N/A|     2.484ns|     N/A|           0
+  keCtl/REACHED_TARGET                      | HOLD        |     1.240ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -209,10 +209,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 10 secs 
+Total REAL time to PAR completion: 18 secs 
+Total CPU time to PAR completion: 17 secs 
 
-Peak Memory Usage:  238 MB
+Peak Memory Usage:  166 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

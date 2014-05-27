@@ -1,3 +1,0 @@
-verilog work "GenericCounter.v"
-verilog work "VGAControl.v"
-verilog work "VGAWrapper.v"

@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.12 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.12 secs
  
---> Reading design: Snake.prj
+--> 
+Reading design: Snake.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -307,14 +310,14 @@ WARNING:Xst:647 - Input <RAND_ADDRH<0>> is never used. This port will be preserv
 WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <REACHED_TARGET>.
     Found 8-bit register for signal <COLOUR>.
-    Found 7-bit adder for signal <$add0000> created at line 174.
-    Found 6-bit adder for signal <$add0001> created at line 177.
-    Found 6-bit subtractor for signal <$sub0000> created at line 183.
-    Found 7-bit subtractor for signal <$sub0001> created at line 189.
+    Found 7-bit adder for signal <$add0000> created at line 180.
+    Found 6-bit adder for signal <$add0001> created at line 183.
+    Found 6-bit subtractor for signal <$sub0000> created at line 189.
+    Found 7-bit subtractor for signal <$sub0001> created at line 195.
     Found 7-bit register for signal <ApplePositionH>.
     Found 10-bit comparator lessequal for signal <ApplePositionH$cmp_le0000> created at line 72.
     Found 6-bit register for signal <ApplePositionV>.
-    Found 10-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 76.
+    Found 9-bit comparator lessequal for signal <ApplePositionV$cmp_le0000> created at line 76.
     Found 10-bit comparator greater for signal <COLOUR$cmp_gt0000> created at line 81.
     Found 9-bit comparator greater for signal <COLOUR$cmp_gt0001> created at line 81.
     Found 10-bit comparator greater for signal <COLOUR$cmp_gt0002> created at line 85.
@@ -393,8 +396,8 @@ WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserv
     Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0029> created at line 126.
     Found 10-bit comparator lessequal for signal <COLOUR$cmp_le0030> created at line 129.
     Found 9-bit comparator lessequal for signal <COLOUR$cmp_le0031> created at line 129.
-    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 198.
-    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 198.
+    Found 7-bit comparator equal for signal <REACHED_TARGET$cmp_eq0000> created at line 136.
+    Found 6-bit comparator equal for signal <REACHED_TARGET$cmp_eq0001> created at line 136.
     Found 4-bit adder for signal <SNAKE_LEN>.
     Found 13-bit register for signal <SnakePosition>.
     Found 13-bit register for signal <SnakePosition1>.
@@ -411,8 +414,8 @@ WARNING:Xst:647 - Input <RAND_ADDRV<0>> is never used. This port will be preserv
     Found 13-bit register for signal <SnakePosition7>.
     Found 13-bit register for signal <SnakePosition8>.
     Found 13-bit register for signal <SnakePosition9>.
-    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 195.
-    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 193.
+    Found 6-bit comparator greater for signal <SnakePosition_12$cmp_gt0000> created at line 201.
+    Found 7-bit comparator greater for signal <SnakePosition_6$cmp_gt0000> created at line 199.
     Summary:
 	inferred 217 D-type flip-flop(s).
 	inferred   5 Adder/Subtractor(s).
@@ -556,7 +559,7 @@ Macro Statistics
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 16
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 18
+ 10-bit comparator lessequal                           : 17
  4-bit comparator greater                              : 14
  6-bit comparator equal                                : 1
  6-bit comparator greater                              : 1
@@ -567,7 +570,7 @@ Macro Statistics
  9-bit comparator greatequal                           : 1
  9-bit comparator greater                              : 16
  9-bit comparator less                                 : 2
- 9-bit comparator lessequal                            : 16
+ 9-bit comparator lessequal                            : 17
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Xors                                                 : 2
@@ -627,7 +630,7 @@ Macro Statistics
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 16
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 18
+ 10-bit comparator lessequal                           : 17
  4-bit comparator greater                              : 14
  6-bit comparator equal                                : 1
  6-bit comparator greater                              : 1
@@ -638,7 +641,7 @@ Macro Statistics
  9-bit comparator greatequal                           : 1
  9-bit comparator greater                              : 16
  9-bit comparator less                                 : 2
- 9-bit comparator lessequal                            : 16
+ 9-bit comparator lessequal                            : 17
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Xors                                                 : 2
@@ -715,17 +718,17 @@ Design Statistics
 # IOs                              : 44
 
 Cell Usage :
-# BELS                             : 1432
+# BELS                             : 1433
 #      GND                         : 1
 #      INV                         : 9
 #      LUT1                        : 29
 #      LUT2                        : 447
 #      LUT2_D                      : 4
 #      LUT2_L                      : 3
-#      LUT3                        : 69
+#      LUT3                        : 66
 #      LUT3_D                      : 2
 #      LUT3_L                      : 2
-#      LUT4                        : 306
+#      LUT4                        : 310
 #      LUT4_D                      : 15
 #      LUT4_L                      : 13
 #      MUXCY                       : 480
@@ -756,7 +759,7 @@ Selected Device : 3s250ecp132-4
 
  Number of Slices:                      491  out of   2448    20%  
  Number of Slice Flip Flops:            305  out of   4896     6%  
- Number of 4 input LUTs:                899  out of   4896    18%  
+ Number of 4 input LUTs:                900  out of   4896    18%  
  Number of IOs:                          44
  Number of bonded IOBs:                  36  out of     92    39%  
  Number of GCLKs:                         3  out of     24    12%  
@@ -782,10 +785,10 @@ Clock Information:
 -----------------------------------+-------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
-CLOCK                              | BUFGP                         | 53    |
+CLOCK                              | BUFGP                         | 54    |
 VS_OBUF(VGAWrp/VGACtl/VS10:O)      | NONE(*)(GameSpeed/TRIGG_OUT)  | 9     |
 SnakeCtl/REACHED_TARGET            | NONE(ScoreCnt/CURRENT_SCORE_0)| 4     |
-GameSpeed/TRIGG_OUT1               | BUFG                          | 196   |
+GameSpeed/TRIGG_OUT1               | BUFG                          | 195   |
 VGAWrp/CLK251                      | BUFG                          | 43    |
 -----------------------------------+-------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -817,7 +820,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
   Clock period: 5.627ns (frequency: 177.715MHz)
-  Total number of paths / destination ports: 477 / 86
+  Total number of paths / destination ports: 499 / 88
 -------------------------------------------------------------------------
 Delay:               5.627ns (Levels of Logic = 8)
   Source:            SnakeCtl/ApplePositionV_1 (FF)
@@ -891,7 +894,7 @@ Delay:               3.152ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GameSpeed/TRIGG_OUT1'
   Clock period: 6.643ns (frequency: 150.534MHz)
-  Total number of paths / destination ports: 860 / 207
+  Total number of paths / destination ports: 847 / 206
 -------------------------------------------------------------------------
 Delay:               6.643ns (Levels of Logic = 3)
   Source:            SnakeCtl/SnakePosition_3 (FF)
@@ -1001,12 +1004,13 @@ Offset:              6.664ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.09 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.06 secs
  
 --> 
 
-Total memory usage is 233648 kilobytes
+
+Total memory usage is 177404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   16 (   0 filtered)

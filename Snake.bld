@@ -1,10 +1,10 @@
-Release 14.7 ngdbuild P.20131013 (nt)
+Release 14.7 ngdbuild P.20131013 (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc Snake.ucf -p xc3s250e-cp132-4 Snake.ngc Snake.ngd
 
-Reading NGO file "C:/Users/Pol/ISE/PolJonasSnake/Snake.ngc" ...
+Reading NGO file "/home/jonas/FPGA/PolJonasSnake/Snake.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -26,10 +26,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 137224 kilobytes
+Total memory usage is 103308 kilobytes
 
 Writing NGD file "Snake.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "Snake.bld"...

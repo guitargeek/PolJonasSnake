@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt)
+Release 14.7 Map P.20131013 (lin)
 Xilinx Mapping Report File for Design 'Snake'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Mon May 26 18:11:01 2014
+Mapped Date    : Tue May 27 18:08:24 2014
 
 Design Summary
 --------------
@@ -17,14 +17,14 @@ Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:           305 out of   4,896    6%
-  Number of 4 input LUTs:               875 out of   4,896   17%
+  Number of 4 input LUTs:               876 out of   4,896   17%
 Logic Distribution:
   Number of occupied Slices:            482 out of   2,448   19%
     Number of Slices containing only related logic:     482 out of     482 100%
     Number of Slices containing unrelated logic:          0 out of     482   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         904 out of   4,896   18%
-    Number used as logic:               875
+  Total Number of 4 input LUTs:         905 out of   4,896   18%
+    Number used as logic:               876
     Number used as a route-thru:         29
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -33,11 +33,11 @@ Logic Distribution:
   Number of bonded IOBs:                 36 out of      92   39%
   Number of BUFGMUXs:                     3 out of      24   12%
 
-Average Fanout of Non-Clock Nets:                4.00
+Average Fanout of Non-Clock Nets:                4.01
 
-Peak Memory Usage:  233 MB
-Total REAL time to MAP completion:  3 secs 
-Total CPU time to MAP completion:   2 secs 
+Peak Memory Usage:  175 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
 
 NOTES:
 
