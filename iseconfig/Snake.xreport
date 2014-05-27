@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-05-27T18:54:39</DateModified>
+  <DateModified>2014-05-27T20:26:02</DateModified>
   <ModuleName>Snake</ModuleName>
-  <SummaryTimeStamp>2014-05-27T18:51:47</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-05-27T20:20:48</SummaryTimeStamp>
   <SavedFilePath>/home/jonas/FPGA/PolJonasSnake/iseconfig/Snake.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/jonas/FPGA/PolJonasSnake/</ImplementationReportsDirectory>
   <DateInitialized>2014-05-16T14:18:40</DateInitialized>

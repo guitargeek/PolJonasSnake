@@ -68,9 +68,14 @@ module Snake(
 					);
 					
 // Change this to adjust the snake's speed	
-GenericCounter  #(.COUNTER_WIDTH(8), .COUNTER_MAX(5))
-GameSpeed(
-		.CLK(VS),
+GenericCounter  #(
+//		.COUNTER_WIDTH(8), 
+//		.COUNTER_MAX(5))
+		.COUNTER_WIDTH(22), 
+		.COUNTER_MAX(4166667))
+	GameSpeed(
+//		.CLK(VS), // this causes a warning!
+		.CLK(CLOCK), // and this doesn't
 		.RESET(1'b0),
  		.ENABLE_IN(1),
 		.TRIGG_OUT(Gameclock)
