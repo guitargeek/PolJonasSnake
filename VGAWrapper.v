@@ -52,6 +52,8 @@ module VGAWrapper(
 			Colour = CIN;
 		else if(MASTER_STATE == 2) // if won
 			Colour = 8'b00100000;
+		else if(MASTER_STATE == 3) // if lost
+			Colour = 8'b00000111;			
 		else // if idle (screen black)
 			Colour = 0;
 	end

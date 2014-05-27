@@ -40,7 +40,8 @@ module Snake(
 	wire [7:0] Colour;
 	wire ReachedTarget;		
 	wire [3:0] Score; // the score we get from the score counter
-	wire Gameclock;	
+	wire Gameclock;
+	wire Suicide;
 		
 	// initialize the modules
 	MasterStateMachine MasterSTM (
@@ -48,7 +49,8 @@ module Snake(
 					.CLOCK(CLOCK),
 					.PUSH_BUTTONS(PUSH_BUTTONS),
 					.SCORE_IN(Score),
-					.STATE_OUT(MasterState)
+					.STATE_OUT(MasterState),
+					.SUICIDE_IN(Suicide)
 					);
 					
 	NavigationStateMachine NavSTM (
@@ -93,7 +95,8 @@ GenericCounter  #(
 					.RAND_ADDRH(RandomAddrH),
 					.RAND_ADDRV(RandomAddrV),
 					.DEBUG_OUT(LEDS),
-					.SCORE(Score)
+					.SCORE(Score),
+					.SUICIDE(Suicide)
 					);
 
   VGAWrapper VGAWrp (

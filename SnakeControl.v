@@ -30,6 +30,8 @@ module SnakeControl(
 	 input [7:0] RAND_ADDRH,
 	 input [6:0] RAND_ADDRV,
 	 input [3:0] SCORE,
+	 // this is true when the snake hits itself
+	 output reg SUICIDE,
 	 output [7:0] DEBUG_OUT
     );
 	 
@@ -40,21 +42,21 @@ module SnakeControl(
 	 reg [6:0] ApplePositionH;
 	 reg [5:0] ApplePositionV;
 	 
-	 reg [12:0] SnakePosition =   {7'b0010000, 6'b010000};
-	 reg [12:0] SnakePosition1 =  {7'b0010000, 6'b010001};
-	 reg [12:0] SnakePosition2 =  {7'b0010000, 6'b010010};
-	 reg [12:0] SnakePosition3 =  {7'b0010000, 6'b010011};
-	 reg [12:0] SnakePosition4 =  {7'b0010000, 6'b010100};
-	 reg [12:0] SnakePosition5 =  {7'b0010000, 6'b010101};
-	 reg [12:0] SnakePosition6 =  {7'b0010000, 6'b010110};
-	 reg [12:0] SnakePosition7 =  {7'b0010000, 6'b010111};
-	 reg [12:0] SnakePosition8 =  {7'b0010000, 6'b011000};
-	 reg [12:0] SnakePosition9 =  {7'b0010000, 6'b011001};
-	 reg [12:0] SnakePosition10 = {7'b0010000, 6'b011010};
-	 reg [12:0] SnakePosition11 = {7'b0010000, 6'b011011};
-	 reg [12:0] SnakePosition12 = {7'b0010000, 6'b011100};
-	 reg [12:0] SnakePosition13 = {7'b0010000, 6'b011101};
-	 reg [12:0] SnakePosition14 = {7'b0010000, 6'b011110};
+	 reg [12:0] SnakePosition14 = {7'b0010000, 6'b010000};
+	 reg [12:0] SnakePosition13 = {7'b0010000, 6'b010001};
+	 reg [12:0] SnakePosition12 = {7'b0010000, 6'b010010};
+	 reg [12:0] SnakePosition11 = {7'b0010000, 6'b010011};
+	 reg [12:0] SnakePosition10 = {7'b0010000, 6'b010100};
+	 reg [12:0] SnakePosition9 = {7'b0010000, 6'b010101};
+	 reg [12:0] SnakePosition8 = {7'b0010000, 6'b010110};
+	 reg [12:0] SnakePosition7 = {7'b0010000, 6'b010111};
+	 reg [12:0] SnakePosition6 = {7'b0010000, 6'b011000};
+	 reg [12:0] SnakePosition5 = {7'b0010000, 6'b011001};
+	 reg [12:0] SnakePosition4 = {7'b0010000, 6'b011010};
+	 reg [12:0] SnakePosition3 = {7'b0010000, 6'b011011};
+	 reg [12:0] SnakePosition2 = {7'b0010000, 6'b011100};
+	 reg [12:0] SnakePosition1 = {7'b0010000, 6'b011101};
+	 reg [12:0] SnakePosition = {7'b0010000, 6'b011110};
 
 	 wire [3:0] SNAKE_LEN;
 	 assign SNAKE_LEN = SCORE +3'd5;
@@ -72,6 +74,15 @@ module SnakeControl(
 			ApplePositionV <= RAND_ADDRV[6:1];
 		else 
 			ApplePositionV <= ~RAND_ADDRV[6:1];
+		// change the apples position if it would be on the head of the snake
+		// but we just collected an apple on just this position:
+		// change just a bit that causes the apple to go far away form the snake
+		if(REACHED_TARGET && 
+			SnakePosition[6:0] == ApplePositionH && 
+			SnakePosition[12:7] == ApplePositionV) begin
+				ApplePositionH[6] <= ~ApplePositionH[6];
+				ApplePositionV[5] <= ~ApplePositionV[5];
+		end
 		// drawing the apple
 		if(ADDRH > {ApplePositionH, 3'b000} && ADDRV > {ApplePositionV, 3'b000}
 			&& ADDRH <= {ApplePositionH, 3'b111} &&  ADDRV <= {ApplePositionV, 3'b111})
@@ -132,26 +143,44 @@ module SnakeControl(
 			REACHED_TARGET <= 1;
 		else
 			REACHED_TARGET <= 0;
-	end
+	  end
+	  // check if the Snake hits itself
+	  if(SNAKE_LEN > 1 && SnakePosition == SnakePosition1   || 
+			SNAKE_LEN > 2 && SnakePosition == SnakePosition2   || 
+			SNAKE_LEN > 3 && SnakePosition == SnakePosition3   || 
+			SNAKE_LEN > 4 && SnakePosition == SnakePosition4   || 
+			SNAKE_LEN > 5 && SnakePosition == SnakePosition5   ||
+			SNAKE_LEN > 6 && SnakePosition == SnakePosition6   || 
+			SNAKE_LEN > 7 && SnakePosition == SnakePosition7   ||
+			SNAKE_LEN > 8 && SnakePosition == SnakePosition8   || 
+			SNAKE_LEN > 9 && SnakePosition == SnakePosition9   ||
+			SNAKE_LEN > 10 && SnakePosition == SnakePosition10 || 
+			SNAKE_LEN > 11 && SnakePosition == SnakePosition11 ||
+			SNAKE_LEN > 12 && SnakePosition == SnakePosition12 || 
+			SNAKE_LEN > 13 && SnakePosition == SnakePosition13 ||
+			SNAKE_LEN > 14 && SnakePosition == SnakePosition14)
+			SUICIDE <= 1;
+	  else
+			SUICIDE <= 0;
 	end
 		
 	always@(posedge GAMECLOCK) begin
 		if(MASTER_STATE == 0) begin
-			SnakePosition <= {7'b0000000, 6'b000000};
-			SnakePosition1 <= {7'b0000000, 6'b000000};
-			SnakePosition2 <= {7'b0000000, 6'b000000};
-			SnakePosition3 <= {7'b0000000, 6'b000000};
-			SnakePosition4 <= {7'b0000000, 6'b000000};
-			SnakePosition5 <= {7'b0000000, 6'b000000};
-			SnakePosition6 <= {7'b0000000, 6'b000000};
-			SnakePosition7 <= {7'b0000000, 6'b000000};
-			SnakePosition8 <= {7'b0000000, 6'b000000};
-			SnakePosition9 <= {7'b0000000, 6'b000000};
-			SnakePosition10 <= {7'b0000000, 6'b000000};
-			SnakePosition11 <= {7'b0000000, 6'b000000};
-			SnakePosition12 <= {7'b0000000, 6'b000000};
-			SnakePosition13 <= {7'b0000000, 6'b000000};
-			SnakePosition14 <= {7'b0000000, 6'b000000};
+			SnakePosition14 <= {7'b0010000, 6'b010000};
+			SnakePosition13 <= {7'b0010000, 6'b010001};
+			SnakePosition12 <= {7'b0010000, 6'b010010};
+			SnakePosition11 <= {7'b0010000, 6'b010011};
+			SnakePosition10 <= {7'b0010000, 6'b010100};
+			SnakePosition9 <= {7'b0010000, 6'b010101};
+			SnakePosition8 <= {7'b0010000, 6'b010110};
+			SnakePosition7 <= {7'b0010000, 6'b010111};
+			SnakePosition6 <= {7'b0010000, 6'b011000};
+			SnakePosition5 <= {7'b0010000, 6'b011001};
+			SnakePosition4 <= {7'b0010000, 6'b011010};
+			SnakePosition3 <= {7'b0010000, 6'b011011};
+			SnakePosition2 <= {7'b0010000, 6'b011100};
+			SnakePosition1 <= {7'b0010000, 6'b011101};
+			SnakePosition <= {7'b0010000, 6'b011110};
 		end else if(MASTER_STATE == 1) begin
 			//shift the snake register
 			SnakePosition1 <= SnakePosition;

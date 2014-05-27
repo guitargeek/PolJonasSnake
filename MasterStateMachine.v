@@ -23,7 +23,8 @@ module MasterStateMachine(
     input CLOCK,
     input [3:0] PUSH_BUTTONS,
     input [3:0] SCORE_IN, // only 6 because we dont need the dot i think
-    output [1:0] STATE_OUT
+    output [1:0] STATE_OUT,
+	 input SUICIDE_IN
     );
 
 	 reg [1:0] CurrState;
@@ -42,7 +43,7 @@ always@(posedge CLOCK) begin
 end
 
 // asynchronous logic
-always@(PUSH_BUTTONS or SCORE_IN or CurrState) begin
+always@(PUSH_BUTTONS or SCORE_IN or SUICIDE_IN or CurrState) begin
 	case(CurrState)
 		2'b00: begin // in idle state
 			if(PUSH_BUTTONS)
@@ -53,13 +54,15 @@ always@(PUSH_BUTTONS or SCORE_IN or CurrState) begin
 		2'b01: begin
 			if(SCORE_IN == 10)
 				NextState <= 2'b10;						
+			else if(SUICIDE_IN)
+				NextState <= 2'b11;
 			else
 				NextState <= CurrState;	
 		end
-		2'b10:
+		2'b10: // this is the "you win"-state
 			NextState <= CurrState;		
-		2'b11: // Something went wrong... RESET
-			NextState <= 2'b00;
+		2'b11: // this is the "you lose"-state
+			NextState <= CurrState;
 	endcase
 end
 

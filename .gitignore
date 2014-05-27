@@ -1,6 +1,7 @@
 # This is what ISE deletes if you perform project cleanup
 Snake.cmd_log
 Snake.bgn
+# Snake.bit
 Snake.bld
 Snake.drc
 Snake.lso
@@ -33,11 +34,14 @@ ngdbuild.xmsgs
 par.xmsgs
 trce.xmsgs
 xst.xmsgs
+# I commented this out because I think it's interesting
 # usage_statistics_webtalk.html
 webtalk.log
 webtalk_pn.xml
 xlnx_auto_0_xdb/
 xst/
 _ngo/
+
+# and this is what I think should be ignored
 NavigationStateMachine_summary.html
 NavigationStateMachine_envsettings.html
