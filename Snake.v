@@ -55,7 +55,7 @@ module Snake(
 					
 	NavigationStateMachine NavSTM (
 					.RESET(RESET),
-					.CLOCK(CLOCK),
+					.CLOCK(Gameclock),
 					.PUSH_BUTTONS(PUSH_BUTTONS),
 					.STATE_OUT(NavState)
 					);
@@ -71,13 +71,10 @@ module Snake(
 					
 // Change this to adjust the snake's speed	
 GenericCounter  #(
-//		.COUNTER_WIDTH(8), 
-//		.COUNTER_MAX(5))
 		.COUNTER_WIDTH(22), 
 		.COUNTER_MAX(4166667))
 	GameSpeed(
-//		.CLK(VS), // this causes a warning!
-		.CLK(CLOCK), // and this doesn't
+		.CLK(CLOCK),
 		.RESET(1'b0),
  		.ENABLE_IN(1),
 		.TRIGG_OUT(Gameclock)
