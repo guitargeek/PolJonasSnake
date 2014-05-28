@@ -1,7 +1,7 @@
 PolJonasSnake
 =============
 
-Snake Game for the Basys2 Board
+Snake Game for the Basys2 Board by Digilent with a Spartan3E FPGA by Xilinx. Devetoped in the context of the Electronics for Physicists course at ETHZ.
 
 ### Remember the commands for git
 
