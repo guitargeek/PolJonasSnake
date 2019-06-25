@@ -5,4 +5,4 @@ Snake Game for the Basys2 Board by Digilent with a Spartan3E FPGA by Xilinx. Dev
 
 ![Screenshot](res/SnakeshotMargins.png)
 
-[Blog post about this little project in german](https://rembserj.web.cern.ch/rembserj/blog_ethz/#projekt-snake-auf-einem-fpga).
+[Blog post about this little project in german](https://guitargeek.github.io/2014/fpga-snake.html).
